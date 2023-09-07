@@ -1,5 +1,13 @@
 // Colours
-$bg-clr-primary:#F0EFE9;
+$clr-primary-100:#FFFFFF; // White
+$clr-primary-200:#F0EFE9; // Beige
+
+$clr-secondary-100: #DAD9D3; //10%
+$clr-secondary-200: #5A5957; //70%
+$clr-secondary-300: #191919; //100%
+
+$clr-yellow: #F0D082; // Yellow
+$clr-orange: #F94D1C; // Orange
 
 // Fonts
 $ff-inter: inter;
@@ -20,7 +28,7 @@ $fw-bold: 700;
 }
 
 header {
-    background-color: $bg-clr-primary;
+    background-color: $clr-primary-200;
     
 
     .container {
@@ -31,6 +39,7 @@ header {
     .menu-bar {
         margin-left: 3rem;
         width: 100%;
+        color: $clr-secondary-300;
 
         ul {
             display: flex;
@@ -45,34 +54,39 @@ header {
         display: flex;
         justify-content: space-between;
         font-size: .93rem;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $clr-secondary-100;
     }
 
     .contact-info {
         ul {
             align-items: center;
-            gap: 3rem;
+            gap: 1rem;
             font-weight: $fw-light;
         }
 
         ul #phone, #email {
-            border-right: 1px solid black;
+            border-right: 1px solid $clr-secondary-100;
             padding-right: 2rem;
+        }
+
+        i {
+            padding-right: .3rem;
+            color: $clr-secondary-200;
         }
 
     }
 
     .social-media {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
 
         ul {
             display: flex;
             align-items: center;
-            gap: 0.5rem
+            gap: 0.7rem
         }
 
         a {
-            color: black;
+            color: $clr-secondary-300;
         }
     }
 
@@ -85,12 +99,12 @@ header {
             align-items: end;
             font-weight:$fw-medium;
             font-size: 1rem;
-            gap: 3rem;
+            gap: 2.5rem;
         }
 
         a {
             text-decoration: none;
-            color: black; 
+            color: $clr-secondary-300;
         }
 
         a:active {
@@ -99,6 +113,12 @@ header {
 
         button {
             align-self: end;
+            background-color: $clr-yellow;
+            border-radius: 16px;
+            border: none;
+            width: 5rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
         }
 
         
@@ -110,7 +130,7 @@ header {
 main {
 
     .sect-one {
-        background-color: $bg-clr-primary;
+        background-color: $clr-primary-200;
         
         .container {
             padding-top: 3rem;
@@ -122,18 +142,39 @@ main {
                     font-family: $ff-DMsans;
                     font-weight: $fw-bold;
                     font-size: 6rem;
+                    color: $clr-secondary-300;
                     padding-top: 3rem;
                     line-height: 5.8rem;
                 }
             
                 p {
                     font-size: 1.25rem;
+                    color: $clr-secondary-200;
                 }
 
                 .btn-container {
                     display: flex;
                     gap: 3rem;
                     margin-top: 2rem;
+
+                    button {
+                        color: $clr-secondary-300;
+                        border-radius: 16px;
+                        border: none;
+                        width: 10rem;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                    }
+
+                    #one {
+                        background-color: $clr-yellow;
+                    }
+
+                    #two {
+                        background-color: $clr-primary-200;
+                        border: 1px solid $clr-secondary-300;
+                    }
+            
                 }
 
             }
@@ -146,6 +187,56 @@ main {
                 }
             }
     
+    }
+
+    .sect-two {
+
+        .container {
+            margin-top: 4rem;
+
+            .logo-container {
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+    
+
+        }
+
+        .container-mid {
+            display: flex;
+            border: solid 2px $clr-secondary-100;
+            padding: 8rem;
+
+            .text-container {
+                width: 50%;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                width: 50%;
+            
+                
+                .grid-item {
+                    background-color: burlywood;
+                    border-radius: 4px;
+                    height: 10rem;
+                
+                }
+            }
+        }
+
+        .container-mid-low {
+            display: flex;
+            margin-top: 4rem;
+        }
+
     }
 
 
