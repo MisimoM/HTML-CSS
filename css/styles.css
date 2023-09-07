@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #F0EFE9;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+header .menu-bar {
+  margin-left: 3rem;
+  width: 100%;
+}
+header .menu-bar ul {
+  display: flex;
+  font-family: inter;
+  list-style-type: none;
+  padding: 0;
+  height: 100%;
+}
+header .top-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.93rem;
+  border-bottom: 1px solid black;
+}
+header .contact-info ul {
+  align-items: center;
+  gap: 3rem;
+  font-weight: 300;
+}
+header .contact-info ul #phone, header .contact-info #email {
+  border-right: 1px solid black;
+  padding-right: 2rem;
+}
+header .social-media {
+  font-size: 1.3rem;
+}
+header .social-media ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .social-media a {
+  color: black;
+}
+header .bot-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+header .bot-container ul {
+  align-items: end;
+  font-weight: 500;
+  font-size: 1rem;
+  gap: 3rem;
+}
+header .bot-container a {
+  text-decoration: none;
+  color: black;
+}
+header .bot-container a:active {
+  text-decoration: underline;
+}
+header .bot-container button {
+  align-self: end;
+}
+
+main .sect-one {
+  background-color: #F0EFE9;
+}
+main .sect-one .container {
+  padding-top: 3rem;
+  display: flex;
+}
+main .sect-one .text-container h1 {
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 6rem;
+  padding-top: 3rem;
+  line-height: 5.8rem;
+}
+main .sect-one .text-container p {
+  font-size: 1.25rem;
+}
+main .sect-one .text-container .btn-container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+main .sect-one figure {
+  margin: 0;
+}
+main .sect-one figure img {
+  height: 36rem;
+}
