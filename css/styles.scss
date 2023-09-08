@@ -114,7 +114,7 @@ header {
         button {
             align-self: end;
             background-color: $clr-yellow;
-            border-radius: 16px;
+            border-radius: 20px;
             border: none;
             width: 5rem;
             padding-top: 0.3rem;
@@ -159,7 +159,7 @@ main {
 
                     button {
                         color: $clr-secondary-300;
-                        border-radius: 16px;
+                        border-radius: 20px;
                         border: none;
                         width: 10rem;
                         padding-top: 0.5rem;
@@ -214,6 +214,36 @@ main {
 
             .text-container {
                 width: 50%;
+                padding-right: 3rem;
+
+                p {
+                    color: $clr-orange;
+
+                }
+
+                h2 {
+                    color: $clr-secondary-300;
+                    font-family: $ff-DMsans;
+                    font-weight: $fw-bold;
+                    font-size: 2.813rem;
+                    padding-right: 1rem;
+                    padding-bottom: 2rem;
+
+                }
+
+                button {
+                    display: block;
+                    width: 90%;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    background-color: $clr-yellow;
+                    border: none;
+                    border-radius: 20px;
+                    font-family: $ff-inter;
+                    font-weight: $fw-semibold;
+                    font-size: 1rem;
+
+                }
             }
 
             .grid-container {
@@ -224,9 +254,31 @@ main {
             
                 
                 .grid-item {
-                    background-color: burlywood;
                     border-radius: 4px;
                     height: 10rem;
+                    padding: 1.2rem;
+
+                    i {
+                        color: $clr-secondary-200;
+                        font-size: 1.6rem;
+
+                    }
+
+                    h3 {
+                        font-family: $ff-DMsans;
+                        font-weight: $fw-bold;
+                        font-size: 1.375rem;
+                        color: $clr-secondary-300;
+                        padding-top: 1rem;
+                    }
+
+                    p {
+                        font-family: $ff-inter;
+                        font-weight: $fw-regular;
+                        font-size: 1rem;
+                        color: $clr-secondary-200;
+
+                    }
                 
                 }
             }
@@ -234,7 +286,85 @@ main {
 
         .container-mid-low {
             display: flex;
-            margin-top: 4rem;
+            padding: 6rem;
+            gap: 10rem;
+
+            h2 {
+                color: $clr-secondary-300;
+                font-family: $ff-DMsans;
+                font-weight: $fw-bold;
+                font-size: 2.813rem;
+                padding-bottom: 2rem;
+
+            }
+
+            p {
+                font-family: $ff-inter;
+                font-weight: $fw-regular;
+                font-size: 1rem;
+                color: $clr-secondary-200;
+                padding-bottom: 4.5rem;
+        
+
+
+
+            }
+            
+        }
+
+    }
+
+    .sect-three {
+        background-color: $clr-primary-200;
+
+        .container {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+            
+            h2 {
+                color: $clr-secondary-300;
+                font-family: $ff-DMsans;
+                font-weight: $fw-bold;
+                font-size: 2.813rem;
+                padding-bottom: 2rem;
+                padding-right: 50rem;
+
+            }
+           
+            .card-container {
+                display: flex;
+                gap: 3rem;
+                padding-bottom: 3rem;
+
+                div {
+                    background-color: $clr-primary-100;
+                    padding: 1rem;
+
+                    h3 {
+                        font-family: $ff-DMsans;
+                        font-weight: $fw-bold;
+                        font-size: 1.375rem;
+                        color: $clr-secondary-300;
+                        padding-top: 1rem;
+
+                    }
+
+                    p {
+                        font-family: $ff-inter;
+                        font-weight: $fw-regular;
+                        font-size: 1rem;
+                        color: $clr-secondary-200;
+                        padding-bottom: 4.5rem;
+
+                    }
+
+                    button {
+                        float: right;
+                    }
+                }
+            }
+    
+
         }
 
     }
