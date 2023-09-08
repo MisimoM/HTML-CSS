@@ -254,3 +254,57 @@ main .sect-three .container .card-container div p {
 main .sect-three .container .card-container div button {
   float: right;
 }
+main .sect-four {
+  background-color: #FFFFFF;
+}
+main .sect-four .container {
+  padding-top: 6rem;
+}
+main .sect-four .container .content-container {
+  display: flex;
+  gap: 3rem;
+}
+main .sect-four .container .content-container .content-left {
+  width: 50%;
+}
+main .sect-four .container .content-container .content-left h2 {
+  color: #191919;
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 2.813rem;
+  padding-right: 12rem;
+}
+main .sect-four .container .content-container .content-left ul {
+  list-style: none;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .sect-four .container .content-container .content-left ul li .wrapper {
+  display: flex;
+}
+main .sect-four .container .content-container .content-left ul li .wrapper i {
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+main .sect-four .container .content-container .content-left ul li .wrapper .text-holder {
+  padding-left: 2rem;
+}
+main .sect-four .container .content-container .content-left ul li .wrapper .text-holder h3 {
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: #191919;
+}
+main .sect-four .container .content-container .content-left ul li .wrapper .text-holder p {
+  font-family: inter;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #5A5957;
+}
+main .sect-four .container figure img {
+  width: 90%;
+}

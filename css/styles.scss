@@ -369,5 +369,95 @@ main {
 
     }
 
+    .sect-four {
+        background-color: $clr-primary-100;
+
+        .container {
+            padding-top: 6rem;
+
+            .content-container {
+                display: flex;
+                gap: 3rem;
+
+                .content-left {
+                    width: 50%;
+
+                    p {
+
+                    }
+    
+                    h2 {
+                        color: $clr-secondary-300;
+                        font-family: $ff-DMsans;
+                        font-weight: $fw-bold;
+                        font-size: 2.813rem;
+                        padding-right: 12rem;
+    
+                    }
+        
+                    ul {
+                        list-style: none;
+                        padding-top: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+    
+                        li {
+    
+                            .wrapper {
+                                display: flex;
+                
+                                i {
+                                    font-size: 1.5rem;
+                                    padding: 0.6rem;
+                                    border: 1px solid black;
+                                    border-radius: 50%;
+                                }
+                
+                                .text-holder {
+                                    padding-left: 2rem;
+                                    
+                                    h3 {
+                                        font-family: $ff-DMsans;
+                                        font-weight: $fw-bold;
+                                        font-size: 1.375rem;
+                                        color: $clr-secondary-300;
+                                    }
+                    
+                                    p {
+                                        font-family: $ff-inter;
+                                        font-weight: $fw-regular;
+                                        font-size: 1rem;
+                                        color: $clr-secondary-200;
+                                    }
+                
+                                }
+                
+                                
+                            }
+    
+                        }
+            
+                        
+                    }
+
+                }
+            }
+
+            figure {
+
+                img {
+                    width: 90%;
+                    }
+            }
+            
+
+        }
+
+        
+
+    }
+
+
 
 }
