@@ -362,3 +362,48 @@ main .sect-five .container .content-container-bot .wrapper-client {
 main .sect-five .container .content-container-bot .wrapper-item {
   display: flex;
 }
+main .sect-six {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+main .sect-six .content-wrapper {
+  display: flex;
+}
+main .sect-seven {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #DAD9D3;
+}
+main .sect-seven .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  padding-top: 6rem;
+  background-color: black;
+}
+footer .content-container {
+  display: flex;
+}
+footer .content-container .logo-container {
+  width: 30%;
+}
+footer .content-container .wrapper {
+  display: flex;
+}
+footer .content-container .wrapper ul {
+  list-style: none;
+}
+footer .content-container .wrapper a {
+  color: white;
+  text-decoration: none;
+}
+footer .wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+footer .wrapper-bottom ul {
+  display: flex;
+  list-style: none;
+}

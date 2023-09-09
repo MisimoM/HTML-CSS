@@ -543,4 +543,61 @@ main {
 
         }
     }
+
+    .sect-six {
+
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .content-wrapper {
+            display: flex;
+        }
+    }
+
+    .sect-seven {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-color: $clr-secondary-100;
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+footer {
+    padding-top: 6rem;
+    background-color: black;
+
+    .content-container {
+        display: flex;
+
+        .logo-container {
+            width: 30%;
+        }
+
+        .wrapper {
+            display: flex;
+
+            ul {
+                list-style: none;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .wrapper-bottom {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+    }
 }
