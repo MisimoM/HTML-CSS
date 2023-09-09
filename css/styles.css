@@ -1,3 +1,40 @@
+:root h2 {
+  color: #191919;
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 2.813rem;
+}
+:root h3 {
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: #191919;
+}
+:root h4 {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #F94D1C;
+}
+:root button {
+  font-family: inter;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #191919;
+  border: 1px solid #191919;
+  border-radius: 20px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+:root ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+:root a {
+  text-decoration: none;
+}
+
 *,
 *::before,
 *::after {
@@ -19,7 +56,6 @@ header .menu-bar {
 header .menu-bar ul {
   display: flex;
   font-family: inter;
-  list-style-type: none;
   padding: 0;
   height: 100%;
 }
@@ -64,21 +100,14 @@ header .bot-container ul {
   font-size: 1rem;
   gap: 2.5rem;
 }
-header .bot-container a {
-  text-decoration: none;
-  color: #191919;
-}
 header .bot-container a:active {
   text-decoration: underline;
 }
 header .bot-container button {
   align-self: end;
   background-color: #F0D082;
-  border-radius: 20px;
   border: none;
   width: 5rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
 }
 
 main .sect-one {
@@ -106,19 +135,14 @@ main .sect-one .text-container .btn-container {
   margin-top: 2rem;
 }
 main .sect-one .text-container .btn-container button {
-  color: #191919;
-  border-radius: 20px;
-  border: none;
   width: 10rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 main .sect-one .text-container .btn-container #one {
   background-color: #F0D082;
+  border: none;
 }
 main .sect-one .text-container .btn-container #two {
   background-color: #F0EFE9;
-  border: 1px solid #191919;
 }
 main .sect-one figure {
   margin: 0;
@@ -130,7 +154,6 @@ main .sect-two .container {
   margin-top: 4rem;
 }
 main .sect-two .container .logo-container ul {
-  list-style: none;
   display: flex;
   justify-content: center;
 }
@@ -143,28 +166,15 @@ main .sect-two .container-mid .text-container {
   width: 50%;
   padding-right: 3rem;
 }
-main .sect-two .container-mid .text-container p {
-  color: #F94D1C;
-}
 main .sect-two .container-mid .text-container h2 {
-  color: #191919;
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 2.813rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
 }
 main .sect-two .container-mid .text-container button {
   display: block;
   width: 90%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   background-color: #F0D082;
   border: none;
-  border-radius: 20px;
-  font-family: inter;
-  font-weight: 600;
-  font-size: 1rem;
 }
 main .sect-two .container-mid .grid-container {
   display: grid;
@@ -173,7 +183,6 @@ main .sect-two .container-mid .grid-container {
   width: 50%;
 }
 main .sect-two .container-mid .grid-container .grid-item {
-  border-radius: 4px;
   height: 10rem;
   padding: 1.2rem;
 }
@@ -182,10 +191,6 @@ main .sect-two .container-mid .grid-container .grid-item i {
   font-size: 1.6rem;
 }
 main .sect-two .container-mid .grid-container .grid-item h3 {
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 1.375rem;
-  color: #191919;
   padding-top: 1rem;
 }
 main .sect-two .container-mid .grid-container .grid-item p {
@@ -200,10 +205,6 @@ main .sect-two .container-mid-low {
   gap: 10rem;
 }
 main .sect-two .container-mid-low h2 {
-  color: #191919;
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 2.813rem;
   padding-bottom: 2rem;
 }
 main .sect-two .container-mid-low p {
@@ -221,10 +222,6 @@ main .sect-three .container {
   padding-bottom: 8rem;
 }
 main .sect-three .container h2 {
-  color: #191919;
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 2.813rem;
   padding-bottom: 2rem;
   padding-right: 50rem;
 }
@@ -238,10 +235,6 @@ main .sect-three .container .card-container div {
   padding: 1rem;
 }
 main .sect-three .container .card-container div h3 {
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 1.375rem;
-  color: #191919;
   padding-top: 1rem;
 }
 main .sect-three .container .card-container div p {
@@ -268,14 +261,9 @@ main .sect-four .container .content-container .content-left {
   width: 50%;
 }
 main .sect-four .container .content-container .content-left h2 {
-  color: #191919;
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 2.813rem;
   padding-right: 12rem;
 }
 main .sect-four .container .content-container .content-left ul {
-  list-style: none;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -294,12 +282,6 @@ main .sect-four .container .content-container .content-left ul li .wrapper i {
 main .sect-four .container .content-container .content-left ul li .wrapper .text-holder {
   padding-left: 2rem;
 }
-main .sect-four .container .content-container .content-left ul li .wrapper .text-holder h3 {
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 1.375rem;
-  color: #191919;
-}
 main .sect-four .container .content-container .content-left ul li .wrapper .text-holder p {
   font-family: inter;
   font-weight: 400;
@@ -312,22 +294,16 @@ main .sect-four .container figure img {
 main .sect-four .part-two {
   padding-top: 5rem;
 }
-main .sect-four .part-two p {
+main .sect-four .part-two h2 {
   text-align: center;
 }
-main .sect-four .part-two h2 {
+main .sect-four .part-two h4 {
   text-align: center;
 }
 main .sect-four .part-two .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-}
-main .sect-four .part-two .grid h3 {
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 1.375rem;
-  color: #191919;
 }
 main .sect-four .part-two .btn-holder {
   text-align: center;
@@ -343,11 +319,8 @@ main .sect-five .container .content-container-top .heading-wrap {
   justify-content: space-between;
 }
 main .sect-five .container .content-container-top .wrapper-team ul {
-  list-style: none;
   display: flex;
   justify-content: space-around;
-  padding: 0;
-  margin: 0;
 }
 main .sect-five .container .content-container-bot {
   background-color: #FFFFFF;
@@ -392,9 +365,6 @@ footer .content-container .logo-container {
 footer .content-container .wrapper {
   display: flex;
 }
-footer .content-container .wrapper ul {
-  list-style: none;
-}
 footer .content-container .wrapper a {
   color: white;
   text-decoration: none;
@@ -405,5 +375,4 @@ footer .wrapper-bottom {
 }
 footer .wrapper-bottom ul {
   display: flex;
-  list-style: none;
 }
