@@ -286,8 +286,9 @@ main .sect-four .container .content-container .content-left ul li .wrapper {
 }
 main .sect-four .container .content-container .content-left ul li .wrapper i {
   font-size: 1.5rem;
-  padding: 0.6rem;
-  border: 1px solid black;
+  padding: 1rem;
+  color: #5A5957;
+  border: 1px solid #DAD9D3;
   border-radius: 50%;
 }
 main .sect-four .container .content-container .content-left ul li .wrapper .text-holder {
@@ -307,4 +308,57 @@ main .sect-four .container .content-container .content-left ul li .wrapper .text
 }
 main .sect-four .container figure img {
   width: 90%;
+}
+main .sect-four .part-two {
+  padding-top: 5rem;
+}
+main .sect-four .part-two p {
+  text-align: center;
+}
+main .sect-four .part-two h2 {
+  text-align: center;
+}
+main .sect-four .part-two .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+main .sect-four .part-two .grid h3 {
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: #191919;
+}
+main .sect-four .part-two .btn-holder {
+  text-align: center;
+}
+main .sect-five {
+  background-color: #F0D082;
+}
+main .sect-five .container {
+  padding-bottom: 6rem;
+}
+main .sect-five .container .content-container-top .heading-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+main .sect-five .container .content-container-top .wrapper-team ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+main .sect-five .container .content-container-bot {
+  background-color: #FFFFFF;
+}
+main .sect-five .container .content-container-bot .text-holder {
+  text-align: center;
+}
+main .sect-five .container .content-container-bot .wrapper-client {
+  display: flex;
+  gap: 3rem;
+}
+main .sect-five .container .content-container-bot .wrapper-item {
+  display: flex;
 }

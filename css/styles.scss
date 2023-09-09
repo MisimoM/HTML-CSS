@@ -409,8 +409,9 @@ main {
                 
                                 i {
                                     font-size: 1.5rem;
-                                    padding: 0.6rem;
-                                    border: 1px solid black;
+                                    padding: 1rem;
+                                    color: $clr-secondary-200;
+                                    border: 1px solid $clr-secondary-100;
                                     border-radius: 50%;
                                 }
                 
@@ -454,10 +455,92 @@ main {
 
         }
 
+        .part-two {
+            padding-top: 5rem;
+
+            p {
+                text-align: center;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            .grid {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+
+                h3 {
+                    font-family: $ff-DMsans;
+                    font-weight: $fw-bold;
+                    font-size: 1.375rem;
+                    color: $clr-secondary-300;
+                }
+
+            }
+
+            .btn-holder {
+                text-align: center;
+            }
+        }
+
+
+
         
 
     }
 
+    .sect-five {
+        background-color: $clr-yellow;
+
+        .container {
+            padding-bottom: 6rem;
+
+            .content-container-top {
+
+                .heading-wrap {
+                    
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .wrapper-team {
+
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 0;
+                        margin: 0;
+
+                    }
+                }
+            }
+
+            .content-container-bot {
+                background-color: $clr-primary-100;
+
+                .text-holder {
+                    text-align: center;
+                }
+
+                .wrapper-client {
+                    display: flex;
+                    gap: 3rem;
+                }
+
+                .wrapper-item {
+                    display: flex;
+                }
 
 
+
+
+
+            }
+
+        }
+    }
 }
