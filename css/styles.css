@@ -120,12 +120,13 @@ header .bot-container button {
 
 main .sect-one {
   background-color: #F0EFE9;
+  position: relative;
 }
 main .sect-one .container {
   padding-top: 3rem;
   display: flex;
 }
-main .sect-one .text-container h1 {
+main .sect-one .container .text-container h1 {
   font-family: DM sans;
   font-weight: 700;
   font-size: 6rem;
@@ -133,32 +134,39 @@ main .sect-one .text-container h1 {
   padding-top: 3rem;
   line-height: 5.8rem;
 }
-main .sect-one .text-container p {
+main .sect-one .container .text-container p {
   font-size: 1.25rem;
 }
-main .sect-one .text-container .btn-container {
+main .sect-one .container .text-container .btn-container {
   display: flex;
   gap: 3rem;
   margin-top: 2rem;
 }
-main .sect-one .text-container .btn-container button {
+main .sect-one .container .text-container .btn-container button {
   width: 10rem;
 }
-main .sect-one .text-container .btn-container #one {
+main .sect-one .container .text-container .btn-container #one {
   background-color: #F0D082;
   border: none;
 }
-main .sect-one .text-container .btn-container #two {
+main .sect-one .container .text-container .btn-container #two {
   background-color: #F0EFE9;
 }
-main .sect-one figure {
+main .sect-one .container figure {
   margin: 0;
 }
-main .sect-one figure img {
+main .sect-one .container figure img {
   height: 36rem;
 }
-main .sect-two .container {
-  margin-top: 4rem;
+main .sect-one .bg-line {
+  position: absolute;
+  bottom: 0;
+}
+main .sect-two {
+  padding-top: 6rem;
+}
+main .sect-two .container .logo-container {
+  padding-bottom: 6rem;
 }
 main .sect-two .container .logo-container ul {
   display: flex;
@@ -260,10 +268,9 @@ main .sect-two .container-mid-low .text-holder #btn-right span {
 }
 main .sect-three {
   background-color: #F0EFE9;
-}
-main .sect-three .container {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  position: relative;
 }
 main .sect-three .container h2 {
   padding-bottom: 2rem;
@@ -317,21 +324,29 @@ main .sect-three .container .btn-holder {
 main .sect-three .container .btn-holder button {
   width: 12rem;
 }
+main .sect-three .bg-line {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 main .sect-four {
   background-color: #FFFFFF;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  position: relative;
 }
 main .sect-four .container {
-  padding-top: 6rem;
+  padding: 0;
 }
 main .sect-four .container .content-container {
   display: flex;
-  gap: 3rem;
+  gap: 8rem;
 }
 main .sect-four .container .content-container .content-left {
-  width: 50%;
+  width: 60%;
 }
 main .sect-four .container .content-container .content-left h2 {
-  padding-right: 12rem;
+  padding-right: 2rem;
 }
 main .sect-four .container .content-container .content-left ul {
   padding-top: 2rem;
@@ -358,14 +373,27 @@ main .sect-four .container .content-container .content-left ul li .wrapper .text
   font-size: 1rem;
   color: #5A5957;
 }
-main .sect-four .container figure img {
-  width: 90%;
+main .sect-four .container .img-holder {
+  text-align: end;
+  width: 100%;
+}
+main .sect-four .container .img-holder img {
+  position: relative;
+  z-index: 1;
+}
+main .sect-four .container .img-holder .bg-colour {
+  background-color: #F0EFE9;
+  height: 60%;
+  width: 113.4%;
+  position: relative;
+  bottom: 42%;
 }
 main .sect-four .part-two {
   padding-top: 5rem;
 }
 main .sect-four .part-two h2 {
   text-align: center;
+  margin-top: 1rem;
 }
 main .sect-four .part-two h4 {
   text-align: center;
@@ -374,14 +402,31 @@ main .sect-four .part-two .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  padding-top: 4rem;
+}
+main .sect-four .part-two .grid h3 {
+  border-bottom: 2px solid #DAD9D3;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+main .sect-four .part-two .grid button {
+  border: none;
+  background-color: #FFFFFF;
+  float: right;
 }
 main .sect-four .part-two .btn-holder {
+  padding-top: 4rem;
   text-align: center;
+}
+main .sect-four .part-two .btn-holder button {
+  width: 15rem;
+  border: none;
+  background-color: #191919;
+  color: #FFFFFF;
 }
 main .sect-five {
   background-color: #F0D082;
-}
-main .sect-five .container {
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 main .sect-five .container .content-container-top .heading-wrap {
@@ -418,15 +463,24 @@ main .sect-seven {
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: #DAD9D3;
+  position: relative;
 }
 main .sect-seven .content-wrapper {
+  margin-left: 4rem;
+  margin-right: 4rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+main .sect-seven .bg-line {
+  position: absolute;
+  bottom: 20%;
+  right: 0%;
 }
 
 footer {
   padding-top: 6rem;
-  background-color: black;
+  background-color: #0E1021;
 }
 footer .content-container {
   display: flex;
