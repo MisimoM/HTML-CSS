@@ -20,6 +20,8 @@ $fw-medium: 500;
 $fw-semibold: 600;
 $fw-bold: 700;
 
+// Padding
+
 :root {
 
     h2 {
@@ -43,6 +45,13 @@ $fw-bold: 700;
         color: $clr-orange;
     }
 
+    p {
+        font-family: $ff-inter;
+        font-weight: $fw-regular;
+        font-size: 1rem;
+        color: $clr-secondary-200;
+    }
+
     button {
         font-family: $ff-inter;
         font-weight: $fw-semibold;
@@ -50,8 +59,8 @@ $fw-bold: 700;
         color: $clr-secondary-300;
         border: 1px solid $clr-secondary-300;
         border-radius: 20px;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
     ul {
@@ -62,6 +71,7 @@ $fw-bold: 700;
 
     a {
         text-decoration: none;
+        color: $clr-secondary-300;
     }
 
 }
@@ -75,7 +85,6 @@ $fw-bold: 700;
 
 header {
     background-color: $clr-primary-200;
-    
 
     .container {
         display: flex;
@@ -90,7 +99,6 @@ header {
         ul {
             display: flex;
             font-family: $ff-inter;
-            padding: 0;
             height: 100%;
         }
     }
@@ -99,10 +107,9 @@ header {
         display: flex;
         justify-content: space-between;
         font-size: .93rem;
+        padding: 0.3rem;
         border-bottom: 1px solid $clr-secondary-100;
-    }
-
-    .contact-info {
+        
         ul {
             align-items: center;
             gap: 1rem;
@@ -118,7 +125,6 @@ header {
             padding-right: .3rem;
             color: $clr-secondary-200;
         }
-
     }
 
     .social-media {
@@ -138,13 +144,14 @@ header {
     .bot-container {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 0.5rem;
+        margin-top: 0.5rem;
 
         ul {
             align-items: end;
             font-weight:$fw-medium;
             font-size: 1rem;
             gap: 2.5rem;
+            padding-bottom: 0.4rem;
         }
 
         a:active {
@@ -156,12 +163,8 @@ header {
             background-color: $clr-yellow;
             border: none;
             width: 5rem;
-        }
-
-        
+        } 
     }
-
-
 }
 
 main {
@@ -186,7 +189,6 @@ main {
             
                 p {
                     font-size: 1.25rem;
-                    color: $clr-secondary-200;
                 }
 
                 .btn-container {
@@ -232,10 +234,7 @@ main {
                     display: flex;
                     justify-content: center;
                 }
-
             }
-    
-
         }
 
         .container-mid {
@@ -268,7 +267,6 @@ main {
                 gap: 1rem;
                 width: 50%;
             
-                
                 .grid-item {
                     height: 10rem;
                     padding: 1.2rem;
@@ -276,21 +274,11 @@ main {
                     i {
                         color: $clr-secondary-200;
                         font-size: 1.6rem;
-
                     }
 
                     h3 {
                         padding-top: 1rem;
                     }
-
-                    p {
-                        font-family: $ff-inter;
-                        font-weight: $fw-regular;
-                        font-size: 1rem;
-                        color: $clr-secondary-200;
-
-                    }
-                
                 }
             }
         }
@@ -300,18 +288,76 @@ main {
             padding: 6rem;
             gap: 10rem;
 
-            h2 {
-                padding-bottom: 2rem;
+            figure {
 
+                position: relative;
+                
+                .img-text {
+                    width: 22.5rem;
+                    height: 10rem;
+                    padding: 2rem;
+                    box-shadow: -3px 13px 17px 10px rgba(148,148,148,0.13);
+                    background-color: #BEEBFF;
+                    position: absolute;
+                    bottom: 5rem;
+                    left: -3rem;
+
+                    h3 {
+                        font-size: 1.25rem;
+                    }
+
+                    span {
+                        font-size: 1rem;
+                        color: $clr-orange;
+                    }
+
+                    p {
+                        color: $clr-secondary-300;
+                        font-style: italic;
+                        margin-top: 0.8rem;
+                    }
+    
+                }
             }
 
-            p {
-                font-family: $ff-inter;
-                font-weight: $fw-regular;
-                font-size: 1rem;
-                color: $clr-secondary-200;
-                padding-bottom: 4.5rem;
-            } 
+            .text-holder {
+
+                p {
+                    padding-top: 2rem;
+                }
+    
+                .button-holder {
+                    display: flex;
+                    padding-top: 5rem;
+                    gap: 3rem;
+                    align-items: center;
+                }
+    
+                #btn-left {
+                    background-color: $clr-secondary-300;
+                    color: $clr-primary-100;
+                    border: none;
+                    width: 10rem;
+
+                }
+    
+                #btn-right {
+                    background-color: $clr-primary-100;
+                    border: none;
+                    
+                    i {
+                        border: 1px solid $clr-secondary-300;
+                        padding: 1rem;
+                        font-size: 0.6rem;
+                        border-radius: 25px;
+                    }
+
+                    span {
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+
         }
     }
 
@@ -327,30 +373,68 @@ main {
                 padding-right: 50rem;
             }
            
-            .card-container {
+            .content-wrapper {
                 display: flex;
                 gap: 3rem;
-                padding-bottom: 3rem;
+                margin-bottom: 3rem;
 
                 div {
                     background-color: $clr-primary-100;
-                    padding: 1rem;
+                    padding: 2rem;
+                    
+                    #content-box {
+                        position: relative;
+                    }
 
                     h3 {
-                        padding-top: 1rem;
+                        padding-top: 2rem;
                     }
 
                     p {
-                        font-family: $ff-inter;
-                        font-weight: $fw-regular;
-                        font-size: 1rem;
-                        color: $clr-secondary-200;
-                        padding-bottom: 4.5rem;
+                        
                     }
 
                     button {
                         float: right;
+                        color: $clr-primary-100;
+                        background-color: $clr-secondary-300;
+                        font-size: 1.3rem;
+                        padding-right: 0.8rem;
+                        padding-left: 0.8rem;
+                        border-radius: 25px;
+                        border: none;
                     }
+
+                    #box-line {
+
+                        position: absolute;
+                        border-top: 3px solid $clr-secondary-300;
+                        height: 2rem;
+                        width: 2rem;
+                        padding: 0;
+
+                    }
+
+                    &:hover {
+                        background-color: $clr-yellow;
+
+                        #box-line {
+                            background-color: $clr-yellow;
+                        }
+
+                        button {
+                            background-color: $clr-primary-100;
+                            color: $clr-secondary-300;
+                        }
+                    }
+                }
+            }
+
+            .btn-holder {
+                text-align: center;
+
+                button {
+                    width: 12rem;
                 }
             }
         }
@@ -465,6 +549,7 @@ main {
 
             .content-container-bot {
                 background-color: $clr-primary-100;
+                padding: 6rem;
 
                 .text-holder {
                     text-align: center;
@@ -473,6 +558,7 @@ main {
                 .wrapper-client {
                     display: flex;
                     gap: 3rem;
+                    margin-top: 5rem;
                 }
 
                 .wrapper-item {

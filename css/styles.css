@@ -16,6 +16,12 @@
   font-size: 1.125rem;
   color: #F94D1C;
 }
+:root p {
+  font-family: inter;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #5A5957;
+}
 :root button {
   font-family: inter;
   font-weight: 600;
@@ -23,8 +29,8 @@
   color: #191919;
   border: 1px solid #191919;
   border-radius: 20px;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 :root ul {
   list-style: none;
@@ -33,6 +39,7 @@
 }
 :root a {
   text-decoration: none;
+  color: #191919;
 }
 
 *,
@@ -56,25 +63,25 @@ header .menu-bar {
 header .menu-bar ul {
   display: flex;
   font-family: inter;
-  padding: 0;
   height: 100%;
 }
 header .top-container {
   display: flex;
   justify-content: space-between;
   font-size: 0.93rem;
+  padding: 0.3rem;
   border-bottom: 1px solid #DAD9D3;
 }
-header .contact-info ul {
+header .top-container ul {
   align-items: center;
   gap: 1rem;
   font-weight: 300;
 }
-header .contact-info ul #phone, header .contact-info #email {
+header .top-container ul #phone, header .top-container #email {
   border-right: 1px solid #DAD9D3;
   padding-right: 2rem;
 }
-header .contact-info i {
+header .top-container i {
   padding-right: 0.3rem;
   color: #5A5957;
 }
@@ -92,13 +99,14 @@ header .social-media a {
 header .bot-container {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 header .bot-container ul {
   align-items: end;
   font-weight: 500;
   font-size: 1rem;
   gap: 2.5rem;
+  padding-bottom: 0.4rem;
 }
 header .bot-container a:active {
   text-decoration: underline;
@@ -127,7 +135,6 @@ main .sect-one .text-container h1 {
 }
 main .sect-one .text-container p {
   font-size: 1.25rem;
-  color: #5A5957;
 }
 main .sect-one .text-container .btn-container {
   display: flex;
@@ -193,26 +200,63 @@ main .sect-two .container-mid .grid-container .grid-item i {
 main .sect-two .container-mid .grid-container .grid-item h3 {
   padding-top: 1rem;
 }
-main .sect-two .container-mid .grid-container .grid-item p {
-  font-family: inter;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #5A5957;
-}
 main .sect-two .container-mid-low {
   display: flex;
   padding: 6rem;
   gap: 10rem;
 }
-main .sect-two .container-mid-low h2 {
-  padding-bottom: 2rem;
+main .sect-two .container-mid-low figure {
+  position: relative;
 }
-main .sect-two .container-mid-low p {
-  font-family: inter;
-  font-weight: 400;
+main .sect-two .container-mid-low figure .img-text {
+  width: 22.5rem;
+  height: 10rem;
+  padding: 2rem;
+  box-shadow: -3px 13px 17px 10px rgba(148, 148, 148, 0.13);
+  background-color: #BEEBFF;
+  position: absolute;
+  bottom: 5rem;
+  left: -3rem;
+}
+main .sect-two .container-mid-low figure .img-text h3 {
+  font-size: 1.25rem;
+}
+main .sect-two .container-mid-low figure .img-text span {
   font-size: 1rem;
-  color: #5A5957;
-  padding-bottom: 4.5rem;
+  color: #F94D1C;
+}
+main .sect-two .container-mid-low figure .img-text p {
+  color: #191919;
+  font-style: italic;
+  margin-top: 0.8rem;
+}
+main .sect-two .container-mid-low .text-holder p {
+  padding-top: 2rem;
+}
+main .sect-two .container-mid-low .text-holder .button-holder {
+  display: flex;
+  padding-top: 5rem;
+  gap: 3rem;
+  align-items: center;
+}
+main .sect-two .container-mid-low .text-holder #btn-left {
+  background-color: #191919;
+  color: #FFFFFF;
+  border: none;
+  width: 10rem;
+}
+main .sect-two .container-mid-low .text-holder #btn-right {
+  background-color: #FFFFFF;
+  border: none;
+}
+main .sect-two .container-mid-low .text-holder #btn-right i {
+  border: 1px solid #191919;
+  padding: 1rem;
+  font-size: 0.6rem;
+  border-radius: 25px;
+}
+main .sect-two .container-mid-low .text-holder #btn-right span {
+  margin-left: 0.5rem;
 }
 main .sect-three {
   background-color: #F0EFE9;
@@ -225,27 +269,53 @@ main .sect-three .container h2 {
   padding-bottom: 2rem;
   padding-right: 50rem;
 }
-main .sect-three .container .card-container {
+main .sect-three .container .content-wrapper {
   display: flex;
   gap: 3rem;
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 }
-main .sect-three .container .card-container div {
+main .sect-three .container .content-wrapper div {
   background-color: #FFFFFF;
-  padding: 1rem;
+  padding: 2rem;
 }
-main .sect-three .container .card-container div h3 {
-  padding-top: 1rem;
+main .sect-three .container .content-wrapper div #content-box {
+  position: relative;
 }
-main .sect-three .container .card-container div p {
-  font-family: inter;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #5A5957;
-  padding-bottom: 4.5rem;
+main .sect-three .container .content-wrapper div h3 {
+  padding-top: 2rem;
 }
-main .sect-three .container .card-container div button {
+main .sect-three .container .content-wrapper div button {
   float: right;
+  color: #FFFFFF;
+  background-color: #191919;
+  font-size: 1.3rem;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  border-radius: 25px;
+  border: none;
+}
+main .sect-three .container .content-wrapper div #box-line {
+  position: absolute;
+  border-top: 3px solid #191919;
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+}
+main .sect-three .container .content-wrapper div:hover {
+  background-color: #F0D082;
+}
+main .sect-three .container .content-wrapper div:hover #box-line {
+  background-color: #F0D082;
+}
+main .sect-three .container .content-wrapper div:hover button {
+  background-color: #FFFFFF;
+  color: #191919;
+}
+main .sect-three .container .btn-holder {
+  text-align: center;
+}
+main .sect-three .container .btn-holder button {
+  width: 12rem;
 }
 main .sect-four {
   background-color: #FFFFFF;
@@ -324,6 +394,7 @@ main .sect-five .container .content-container-top .wrapper-team ul {
 }
 main .sect-five .container .content-container-bot {
   background-color: #FFFFFF;
+  padding: 6rem;
 }
 main .sect-five .container .content-container-bot .text-holder {
   text-align: center;
@@ -331,6 +402,7 @@ main .sect-five .container .content-container-bot .text-holder {
 main .sect-five .container .content-container-bot .wrapper-client {
   display: flex;
   gap: 3rem;
+  margin-top: 5rem;
 }
 main .sect-five .container .content-container-bot .wrapper-item {
   display: flex;
