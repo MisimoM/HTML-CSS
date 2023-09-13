@@ -61,211 +61,261 @@ header .container {
   display: flex;
   align-items: center;
 }
-header .menu-bar-container {
-  margin-left: 3rem;
-  width: 100%;
-  color: #191919;
+@media screen and (max-width: 425px) {
+  header .container {
+    justify-content: space-between;
+  }
+  header .menu-holder {
+    padding-right: 1rem;
+  }
+  header .menu-holder button {
+    border: none;
+    background-color: #F0EFE9;
+  }
+  header .menu-holder button:hover i {
+    font-size: calc(1.563rem + 20%);
+  }
+  header .menu-holder i {
+    font-size: 1.563rem;
+  }
+  header .menu-bar-container {
+    display: none;
+  }
 }
-header .menu-bar-container ul {
-  display: flex;
-  font-family: inter;
-}
-header .menu-bar-top {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.93rem;
-  padding: 0.3rem;
-  border-bottom: 1px solid #DAD9D3;
-}
-header .menu-bar-top ul {
-  align-items: center;
-  gap: 1rem;
-  font-weight: 300;
-}
-header .menu-bar-top ul #phone, header .menu-bar-top #email {
-  border-right: 1px solid #DAD9D3;
-  padding-right: 2rem;
-}
-header .menu-bar-top i {
-  padding-right: 0.3rem;
-  color: #5A5957;
-}
-header .social-media {
-  font-size: 1.1rem;
-}
-header .social-media ul {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-header .social-media a {
-  color: #191919;
-}
-header .menu-bar-bot {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.5rem;
-}
-header .menu-bar-bot ul {
-  align-items: end;
-  font-weight: 500;
-  font-size: 1rem;
-  gap: 2.5rem;
-  padding-bottom: 0.4rem;
-}
-header .menu-bar-bot a:active {
-  text-decoration: underline;
-}
-header .menu-bar-bot button {
-  align-self: end;
-  background-color: #F9D783;
-  border: none;
-  width: 5rem;
+@media screen and (min-width: 426px) {
+  header .menu-holder {
+    display: none;
+  }
+  header .menu-bar-container {
+    margin-left: 3rem;
+    width: 100%;
+    color: #191919;
+  }
+  header .menu-bar-container ul {
+    display: flex;
+    font-family: inter;
+  }
+  header .menu-bar-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.93rem;
+    padding: 0.3rem;
+    border-bottom: 1px solid #DAD9D3;
+  }
+  header .menu-bar-top ul {
+    align-items: center;
+    gap: 1rem;
+    font-weight: 300;
+  }
+  header .menu-bar-top ul #phone, header .menu-bar-top #email {
+    border-right: 1px solid #DAD9D3;
+    padding-right: 2rem;
+  }
+  header .menu-bar-top i {
+    padding-right: 0.3rem;
+    color: #5A5957;
+  }
+  header .social-media {
+    font-size: 1.1rem;
+  }
+  header .social-media ul {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  header .social-media a {
+    color: #191919;
+  }
+  header .menu-bar-bot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  header .menu-bar-bot ul {
+    align-items: end;
+    font-weight: 500;
+    font-size: 1rem;
+    gap: 2.5rem;
+    padding-bottom: 0.4rem;
+  }
+  header .menu-bar-bot a:active {
+    text-decoration: underline;
+  }
+  header .menu-bar-bot button {
+    align-self: end;
+    background-color: #F9D783;
+    border: none;
+    width: 5rem;
+  }
 }
 
 main .section-one {
   background-color: #F0EFE9;
   position: relative;
-  padding-top: 5.625rem;
 }
-main .section-one .container {
-  display: flex;
-}
-main .section-one .container .text-container h1 {
-  padding-top: 3rem;
-  line-height: 5.8rem;
-}
-main .section-one .container .text-container p {
-  font-size: 1.375rem;
-}
-main .section-one .container .text-container .btn-container {
+main .btn-container {
   display: flex;
   gap: 3rem;
   margin-top: 2rem;
 }
-main .section-one .container .text-container .btn-container button {
+main .btn-container button {
   width: 10rem;
 }
-main .section-one .container .text-container .btn-container #one {
+main .btn-container #one {
   background-color: #F9D783;
   border: none;
 }
-main .section-one .container .text-container .btn-container #two {
+main .btn-container #two {
   background-color: #F0EFE9;
 }
-main .section-one .container figure {
-  margin: 0;
+@media screen and (max-width: 425px) {
+  main figure, main .bg-line {
+    display: none;
+  }
+  main .section-one {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  main .text-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  main .text-container h1 {
+    font-size: 3rem;
+  }
 }
-main .section-one .container figure img {
-  height: 36rem;
+@media screen and (min-width: 426px) {
+  main .section-one {
+    padding-top: 5.625rem;
+  }
+  main .section-one .container {
+    display: flex;
+  }
+  main .section-one .container .text-container h1 {
+    padding-top: 3rem;
+    line-height: 5.8rem;
+  }
+  main .section-one .container .text-container p {
+    font-size: 1.375rem;
+  }
+  main .section-one .container figure {
+    margin: 0;
+  }
+  main .section-one .container figure img {
+    height: 36rem;
+  }
+  main .section-one .bg-line {
+    position: absolute;
+    bottom: 0;
+  }
 }
-main .section-one .bg-line {
-  position: absolute;
-  bottom: 0;
-}
-main .sect-two {
-  padding-top: 5.625rem;
-}
-main .sect-two .logo-container {
-  padding-bottom: 5.625rem;
-}
-main .sect-two .logo-container ul {
-  display: flex;
-  justify-content: center;
-}
-main .sect-two .container-mid {
-  display: flex;
-  border: solid 2px #DAD9D3;
-  padding: 5.625rem;
-}
-main .sect-two .container-mid .text-container {
-  width: 50%;
-  padding-right: 3rem;
-}
-main .sect-two .container-mid .text-container h2 {
-  padding-right: 1rem;
-  padding-bottom: 2rem;
-}
-main .sect-two .container-mid .text-container button {
-  display: block;
-  width: 90%;
-  background-color: #F9D783;
-  border: none;
-}
-main .sect-two .container-mid .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  width: 50%;
-}
-main .sect-two .container-mid .grid-container .grid-item {
-  height: 10rem;
-  padding: 1.2rem;
-}
-main .sect-two .container-mid .grid-container .grid-item i {
-  color: #5A5957;
-  font-size: 1.6rem;
-}
-main .sect-two .container-mid .grid-container .grid-item h3 {
-  padding-top: 1rem;
-}
-main .sect-two .container-mid-low {
-  display: flex;
-  gap: 6rem;
-  padding: 7.5rem;
-}
-main .sect-two .container-mid-low figure {
-  position: relative;
-}
-main .sect-two .container-mid-low figure .img-text {
-  width: 22.5rem;
-  height: 10rem;
-  padding: 2rem;
-  box-shadow: -3px 13px 17px 10px rgba(148, 148, 148, 0.13);
-  background-color: #BEEBFF;
-  position: absolute;
-  bottom: 5rem;
-  left: -3rem;
-}
-main .sect-two .container-mid-low figure .img-text h3 {
-  font-size: 1.25rem;
-}
-main .sect-two .container-mid-low figure .img-text span {
-  font-size: 1rem;
-  color: #F94D1C;
-}
-main .sect-two .container-mid-low figure .img-text p {
-  color: #191919;
-  font-style: italic;
-  margin-top: 0.8rem;
-}
-main .sect-two .container-mid-low .text-holder p {
-  padding-top: 2rem;
-}
-main .sect-two .container-mid-low .text-holder .button-holder {
-  display: flex;
-  padding-top: 5rem;
-  gap: 3rem;
-  align-items: center;
-}
-main .sect-two .container-mid-low .text-holder #btn-left {
-  background-color: #191919;
-  color: #FFFFFF;
-  border: none;
-  width: 10rem;
-}
-main .sect-two .container-mid-low .text-holder #btn-right {
-  background-color: #FFFFFF;
-  border: none;
-}
-main .sect-two .container-mid-low .text-holder #btn-right i {
-  border: 1px solid #191919;
-  padding: 1rem;
-  font-size: 0.6rem;
-  border-radius: 25px;
-}
-main .sect-two .container-mid-low .text-holder #btn-right span {
-  margin-left: 0.5rem;
+@media screen and (min-width: 426px) {
+  main .sect-two {
+    padding-top: 5.625rem;
+  }
+  main .sect-two .logo-container {
+    padding-bottom: 5.625rem;
+  }
+  main .sect-two .logo-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .sect-two .container-mid {
+    display: flex;
+    border: solid 2px #DAD9D3;
+    padding: 5.625rem;
+  }
+  main .sect-two .container-mid .text-container {
+    width: 50%;
+    padding-right: 3rem;
+  }
+  main .sect-two .container-mid .text-container h2 {
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+  main .sect-two .container-mid .text-container button {
+    display: block;
+    width: 90%;
+    background-color: #F9D783;
+    border: none;
+  }
+  main .sect-two .container-mid .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 50%;
+  }
+  main .sect-two .container-mid .grid-container .grid-item {
+    height: 10rem;
+    padding: 1.2rem;
+  }
+  main .sect-two .container-mid .grid-container .grid-item i {
+    color: #5A5957;
+    font-size: 1.6rem;
+  }
+  main .sect-two .container-mid .grid-container .grid-item h3 {
+    padding-top: 1rem;
+  }
+  main .sect-two .container-mid-low {
+    display: flex;
+    gap: 6rem;
+    padding: 7.5rem;
+  }
+  main .sect-two .container-mid-low figure {
+    position: relative;
+  }
+  main .sect-two .container-mid-low figure .img-text {
+    width: 22.5rem;
+    height: 10rem;
+    padding: 2rem;
+    box-shadow: -3px 13px 17px 10px rgba(148, 148, 148, 0.13);
+    background-color: #BEEBFF;
+    position: absolute;
+    bottom: 5rem;
+    left: -3rem;
+  }
+  main .sect-two .container-mid-low figure .img-text h3 {
+    font-size: 1.25rem;
+  }
+  main .sect-two .container-mid-low figure .img-text span {
+    font-size: 1rem;
+    color: #F94D1C;
+  }
+  main .sect-two .container-mid-low figure .img-text p {
+    color: #191919;
+    font-style: italic;
+    margin-top: 0.8rem;
+  }
+  main .sect-two .container-mid-low .text-holder p {
+    padding-top: 2rem;
+  }
+  main .sect-two .container-mid-low .text-holder .button-holder {
+    display: flex;
+    padding-top: 5rem;
+    gap: 3rem;
+    align-items: center;
+  }
+  main .sect-two .container-mid-low .text-holder #btn-left {
+    background-color: #191919;
+    color: #FFFFFF;
+    border: none;
+    width: 10rem;
+  }
+  main .sect-two .container-mid-low .text-holder #btn-right {
+    background-color: #FFFFFF;
+    border: none;
+  }
+  main .sect-two .container-mid-low .text-holder #btn-right i {
+    border: 1px solid #191919;
+    padding: 1rem;
+    font-size: 0.6rem;
+    border-radius: 25px;
+  }
+  main .sect-two .container-mid-low .text-holder #btn-right span {
+    margin-left: 0.5rem;
+  }
 }
 main .sect-three {
   background-color: #F0EFE9;
