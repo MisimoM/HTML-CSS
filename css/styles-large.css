@@ -607,15 +607,8 @@ footer .wrapper ul {
 footer .wrapper h3 {
   color: #FFFFFF;
 }
-footer .full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50.5vw;
-  margin-right: -50vw;
-  border-top: 1px solid #323442;
-  overflow-y: hidden;
+footer .top-border {
+  border-top: 1px solid #5A5957;
 }
 footer .bottom-wrapper {
   display: flex;

@@ -246,7 +246,7 @@ header, .section-one, .section-three {
 
     .bg-line {
         position: absolute;
-        bottom:0;
+        bottom: 0;
     }
 }      
 
@@ -799,15 +799,8 @@ footer {
 
     }
 
-    .full-width {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50.5vw;
-        margin-right: -50vw;
-        border-top: 1px solid #323442;
-        overflow-y: hidden;
+    .top-border {
+        border-top: 1px solid $clr-secondary-200;
     }
 
     .bottom-wrapper {
