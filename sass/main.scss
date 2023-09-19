@@ -1,0 +1,88 @@
+@forward "abstracts/variables";
+@forward "base/typography";
+
+header {
+    
+    .menu-holder {
+        display: none;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-bar-container {
+        margin-left: 3rem;
+        width: 100%;
+        color: $clr-secondary-300;
+    
+        ul {
+            display: flex;
+            font-family: $ff-inter;
+        }
+    }
+    
+    .menu-bar-top {
+        display: flex;
+        justify-content: space-between;
+        font-size: .93rem;
+        padding: 0.3rem;
+        border-bottom: 1px solid $clr-secondary-100;
+        
+        ul {
+            align-items: center;
+            gap: 1rem;
+            font-weight: $fw-light;
+        }
+    
+        ul #phone, #email {
+            border-right: 1px solid $clr-secondary-100;
+            padding-right: 2rem;
+        }
+    
+        i {
+            padding-right: .3rem;
+            color: $clr-secondary-200;
+        }
+    }
+    
+    .social-media-header {
+        font-size: 1.1rem;
+    
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem
+        }
+    
+        a {
+            color: $clr-secondary-300;
+        }
+    }
+    
+    .menu-bar-bot {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    
+        ul {
+            align-items: end;
+            font-weight:$fw-medium;
+            font-size: 1rem;
+            gap: 2.5rem;
+            padding-bottom: 0.4rem;
+        }
+    
+        a:active {
+            text-decoration: underline;
+        }
+    
+        button {
+            align-self: end;
+            background-color: $clr-yellow;
+            border: none;
+            width: 5rem;
+        } 
+    } 
+}
