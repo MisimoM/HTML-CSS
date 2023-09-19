@@ -104,7 +104,7 @@ $pad-120px: 7.5rem;
     box-sizing: border-box;
 }
 
-header, .section-one, .section-three {
+header, .section-one, .section-three, .section-start {
     background-color: $clr-primary-200;
 }
 
@@ -202,6 +202,8 @@ header, .section-one, .section-three {
 
     .container {
         display: flex;
+        position: relative;
+        z-index: 1;
     }
 
     .text-holder {
@@ -290,9 +292,13 @@ header, .section-one, .section-three {
         }
     }
 
+    .btn-holder-top {
+        display: none;
+    }
+
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
         gap: 1rem;
         width: 50%;
     }
@@ -354,7 +360,7 @@ header, .section-one, .section-three {
         }
     }
 
-    .btn-holder {
+    .btn-holder-bot {
         display: flex;
         padding-top: 5rem;
         gap: 3rem;
@@ -472,6 +478,8 @@ header, .section-one, .section-three {
     .container-top {
         display: flex;
         gap: 8rem;
+        position: relative;
+        z-index: 1;
     }
 
     .text-holder {
@@ -503,7 +511,6 @@ header, .section-one, .section-three {
     }
 
     .wrapper-item {
-        
         padding-left: 2rem;
     }
  
@@ -511,19 +518,21 @@ header, .section-one, .section-three {
     .img-holder {
         text-align: end;
         width: 100%;
+        padding-top:1rem;
 
         img {
-            position: relative;
-            z-index: 1;
+            width: 90%;
         }
+    }
 
-        .bg-colour {
-            background-color: $clr-primary-200;
-            height: 60%;
-            width: 113.4%;
-            position: relative;
-            bottom: 42%;
-        }
+    .bg-colour {
+        background-color: $clr-primary-200;
+        height: 20%;
+        width: 55%;
+        position: absolute;
+        top: 14%;
+        right: 0;
+        z-index: 0;
     }
 
     .container-bot {
@@ -532,44 +541,42 @@ header, .section-one, .section-three {
         h2 {
             text-align: center;
             margin-top: 1rem;
-
-            //H2 och H4 i en div?
         }
 
         h4 {
             text-align: center;
         }
+    }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            padding-top: 4rem;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        gap: 2rem;
+        padding-top: 4rem;
 
-            h3 {
-                border-bottom: 2px solid $clr-secondary-100;
-                padding-top: 1.5rem;
-                padding-bottom: 0.5rem;
-            }
-
-            button {
-                border: none;
-                background-color: $clr-primary-100;
-                float: right;
-            }
+        h3 {
+            border-bottom: 2px solid $clr-secondary-100;
+            padding-top: 1.5rem;
+            padding-bottom: 0.5rem;
         }
 
-        .btn-holder {
-            padding-top: 4rem;
-            text-align: center;
+        button {
+            border: none;
+            background-color: $clr-primary-100;
+            float: right;
+        }
+    }
 
-            button {
-                width: 15rem;
-                border: none;
-                background-color: $clr-secondary-300;
-                color: $clr-primary-100;
+    .btn-holder {
+        padding-top: 4rem;
+        text-align: center;
 
-            }
+        button {
+            width: 15rem;
+            border: none;
+            background-color: $clr-secondary-300;
+            color: $clr-primary-100;
+
         }
     }
 }
@@ -683,21 +690,30 @@ header, .section-one, .section-three {
             margin-bottom: 1rem;
         }
 
-        .item-box {
-
-            position: absolute;
-            top: 5%;
-            left: 5%;
-
-            height: 3.5rem;
-            width: 3rem;
-            background-color: $clr-yellow;
-            text-align: center;
-            border-radius: 5px;
-        }
-
         h3 {
             padding-right: 8rem;
+        }
+    }
+
+    .item-box {
+
+        position: absolute;
+        top: 5%;
+        left: 5%;
+
+        height: 3.5rem;
+        width: 3rem;
+        padding: 0.2rem;
+        background-color: $clr-yellow;
+        text-align: center;
+        border-radius: 5px;
+
+        b {
+            font-size: 1.3rem;
+        }
+
+        p {
+            line-height: 0.5rem;
         }
     }
 
@@ -713,30 +729,55 @@ header, .section-one, .section-three {
     background-color: $clr-secondary-100;
     position: relative;
 
-    .wrapper {
-
-        margin-left: 4rem;
-        margin-right: 4rem;
+    .container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+        form {
+            display: flex;
+            gap: 5rem;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        h2 {
+            width: 100%
+        }
+
+        ul {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+            margin: 0;
+        }
+
+        li {
+
+            #email {
+                width: 100%;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                width: 20rem;
+
+            }
+
+            #button {
+                background-color: $clr-yellow;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                width: 10rem;
+            }
+
+        }
 
         input {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 2rem;
             border-radius: 20px;
             border: none;
-            width: 18rem;
-            margin-right: 2rem;
-            
+            padding: 1rem;
         }
 
-        button {
-            width: 10rem;
-            background-color: $clr-yellow;
-            border: none;
-        }
     }
 
     .bg-line {
@@ -747,17 +788,18 @@ header, .section-one, .section-three {
 }
 
 footer {
-    padding-top: $pad-120px;
+    padding-top: $pad-90px;
     background-color: #0E1021;
-    position: relative;
 
-    .bg-line {
-        position: absolute;
-        bottom: 15%;
-        right: 0%;
+    .container-fluid {
+        position: relative
     }
 
-    .container {
+    .container, .content-container {
+        padding-bottom: $pad-90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         p {
             color: $clr-secondary-100;
@@ -766,13 +808,6 @@ footer {
         a {
             color: $clr-secondary-100;
         }  
-    }
-
-    .content-container {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 6rem;
-        align-items: center;
     }
 
     .img-holder {
@@ -799,8 +834,15 @@ footer {
 
     }
 
+    .bg-line {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
     .top-border {
         border-top: 1px solid $clr-secondary-200;
+        position: relative
     }
 
     .bottom-wrapper {
@@ -817,6 +859,97 @@ footer {
             a {
                 color: $clr-primary-100;
             }
+        }
+    }
+}
+
+//Contact page
+    
+.section-start {
+    padding-top: $pad-90px;
+    padding-bottom: $pad-90px;
+    position: relative;
+
+    .text-holder {
+        text-align: center;
+
+        h1 {
+            font-size: 56px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        p {
+            font-weight: $fw-medium;
+        }
+    }
+
+    .bg-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scalex(-1);
+
+    }
+}
+
+.section-forms {
+    padding-top: $pad-90px;
+
+    .wrapper-contact {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .item-wrapper {
+        display: flex;
+        gap: 1rem;
+        border: 1px solid $clr-secondary-200;
+        padding: 2rem;
+        width: 100%;
+        justify-content: center;
+
+        i {
+            font-size: $fs-22px;
+        }
+    }
+
+    .forms-holder {
+        margin-top: $mar-90px;
+        margin-bottom: $mar-90px;
+        background-color: $clr-primary-200;
+        padding: 5rem;
+        text-align: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding-top: 1rem;
+        }
+
+        li {
+            width: 100%;
+
+            #message {
+                height: 10rem;
+            }
+
+            #button {
+                background-color: $clr-yellow;
+            }
+        }
+
+        input, textarea {
+            width: 90%;
+            border-radius: 20px;
+            border: none;
+            padding: 1rem;
         }
     }
 }

@@ -146,10 +146,16 @@ header, .section-one, .section-three {
     padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
+    position: relative;
 
     //Display none elements
-    .img-holder, .bg-line {
+    .img-holder {
         display: none;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
     }
 
     .text-holder {
@@ -165,7 +171,7 @@ header, .section-one, .section-three {
 
     .btn-holder {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-top: 2rem;
         gap: 1rem;
 
@@ -181,6 +187,13 @@ header, .section-one, .section-three {
         #two {
             background-color: $clr-primary-200;
         }
+    }
+
+    .bg-line {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
     }
 }
 
@@ -211,19 +224,16 @@ header, .section-one, .section-three {
         h2 {
             font-size: 2rem;
             padding-top: 0.5rem;
-            padding-bottom: 2rem;
         }
 
         button {
-            width: 14rem;
-            background-color: $clr-yellow;
-            border: none;
+            display: none;
         }
     }
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
         gap: 0.3rem;
     }
 
@@ -234,12 +244,25 @@ header, .section-one, .section-three {
         }
     }
 
+    .btn-holder-top {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        button {
+            width: 14rem;
+            background-color: $clr-yellow;
+            border: none;
+        }
+    }
+
     .container-bot {
-        padding-top: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-top: 1px solid $clr-secondary-100;
     }
 
     .img-holder {
@@ -298,7 +321,7 @@ header, .section-one, .section-three {
         }
     }
 
-    .btn-holder {
+    .btn-holder-bot {
         display: flex;
         justify-content: space-around;
         gap: 0.5rem;
@@ -352,19 +375,28 @@ header, .section-one, .section-three {
     .content-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        text-align: start;
+        gap: 0.5rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        text-align: start;
+        width: 100%;
+        @media screen and (min-width: 34.375em) {
+            width: 100%;
+            
+        }
     }
 
     .wrapper-item {
         background-color: $clr-primary-100;
+        justify-self: center;
         position: relative;
-        height: 100%;
-        width: 100%;
         padding: 2rem;
         border-radius: 5px;
+        width: 100%;
+        @media screen and (min-width: 34.375em) {
+            width: 49%;
+            
+        }
 
         h3 {
             padding-top: 2rem;
@@ -418,6 +450,10 @@ header, .section-one, .section-three {
     padding-bottom: 2rem;
     text-align: center;
 
+    .container-top {
+        padding-bottom: 2rem;
+    }
+
     .img-holder {
         display: none;
     }
@@ -432,7 +468,7 @@ header, .section-one, .section-three {
             padding-top: 2rem;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 2rem;
             width: 100%;
         }
     }
@@ -440,7 +476,6 @@ header, .section-one, .section-three {
     .wrapper {
         display: flex;
         justify-content: center;
-
         i {
             font-size: 1.5rem;
             padding: 1rem;
@@ -453,12 +488,12 @@ header, .section-one, .section-three {
     .wrapper-item {
         width: 75%;
         justify-content: center;
-        gap: 2rem;
         
     }
 
     .container-bot {
         padding-top: 2rem;
+        border-top: 1px solid $clr-secondary-100;
 
         h2 {
             text-align: center;
@@ -473,12 +508,13 @@ header, .section-one, .section-three {
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
         gap: 1rem;
         padding-top: 2rem;
 
         img {
             width: 100%;
+            border-radius: 5px;
         }
 
         h3 {
@@ -532,8 +568,22 @@ header, .section-one, .section-three {
     .wrapper-top {
         margin-bottom: 3rem;
         margin-top: 2rem;
-        display: flex;
-        justify-content: center;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 1rem;
+        }
+
+        li {
+            width: 100%;
+            @media screen and (min-width: 21.875em) {
+                width: 45%;
+                
+            }
+        }
 
         h3 {
             margin-top: 0.5rem;
@@ -543,16 +593,13 @@ header, .section-one, .section-three {
             padding: 0;
         }
 
-        ul {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
         img {
-            width: 100%;
             border-radius: 5px;
+            width: 80%;
+            @media screen and (min-width: 21.875em) {
+                width: 100%;
+                
+            }
         }
     }
 
@@ -584,7 +631,7 @@ header, .section-one, .section-three {
         }
     }
 
-    .wrapper-item {
+    .wrapper-item-bot {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
@@ -662,6 +709,14 @@ header, .section-one, .section-three {
             background-color: $clr-yellow;
             text-align: center;
             border-radius: 5px;
+
+            b {
+                font-size: 1.3rem;
+            }
+
+            p {
+                line-height: 0.5rem;
+            }
         }
     }
 }
@@ -671,39 +726,56 @@ header, .section-one, .section-three {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: $clr-secondary-100;
-    text-align: center;
+    position: relative;
 
-    h2 {
-        font-size: 2rem;
+    .container {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        ul {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        li {
+
+            #email {
+                width: 70%;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+
+            #button {
+                width: 40%;
+                background-color: $clr-yellow;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+
+        }
+
+        input {
+            border-radius: 20px;
+            border: none;
+            padding: 1rem;
+        }
+
+
+
+
     }
 
     .bg-line {
-        display: none;
-    }
+        width: 100%;
 
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-
-        input {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-radius: 20px;
-            border: none;
-            width: 18rem;
-            text-align: center;
-            display: block;
-            margin-bottom: 1rem;
-            
-        }
-
-        button {
-            width: 10rem;
-            background-color: $clr-yellow;
-            border: none;
+        img {
+            width: 30%;
+            position: absolute;
+            bottom: 10%;
+            right: 0;
         }
     }
 }
@@ -712,7 +784,10 @@ header, .section-one, .section-three {
 footer {
     padding-top: 2rem;
     background-color: #0E1021;
-    position: relative;
+    
+    .container-fluid {
+        position: relative;
+    }
 
     .container {
 
@@ -737,13 +812,13 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
-        margin-bottom: 2rem;;
 
         ul {
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            width: 100%
+            width: 100%;
+            margin-bottom: 2rem;
         }
 
         h3 {
@@ -754,8 +829,13 @@ footer {
 
     .bg-line {
         position: absolute;
-        bottom: 9.8%;
+        bottom: 0;
         right: 0;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
     }
 
     .top-border {
@@ -781,7 +861,7 @@ footer {
         order: 2;
         margin-top: 1rem;
     }
-    
+
     .wrapper-item-link {
         order: 1;
 
@@ -790,3 +870,100 @@ footer {
         }
     }
 }
+
+
+//Contact
+.section-start {
+    background-color: $clr-primary-200;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+
+
+    .text-holder {
+        text-align: center;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .bg-line {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        transform: scalex(-1);
+
+    }
+
+
+}
+
+.section-forms {
+    padding-top: 2rem;
+
+    .wrapper-contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .item-wrapper {
+        display: flex;
+        gap: 1rem;
+        padding: 2rem;
+        border: 1px solid $clr-secondary-200;
+        border-radius: 5px;
+    }
+
+    .forms-holder {
+        background-color: $clr-primary-200;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        border-radius: 5px;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        li {
+            width: 100%;
+
+            #message {
+                height: 10rem;
+            }
+
+            #button {
+                background-color: $clr-yellow;
+            }
+        }
+
+        input, textarea {
+            width: 90%;
+            border-radius: 20px;
+            border: none;
+            padding: 1rem;
+        }
+
+    }
+}
+
+
+
+

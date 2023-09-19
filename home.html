@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles-xsmall.css" media="screen and (max-width: 36em)">
     <!-- CSS file for screens with a minimum width of 575px -->
     <link rel="stylesheet" href="css/styles-large.css" media="screen and (min-width: 36.063em)">
+    
     <title>Home</title>
 </head>
 <body>
@@ -118,6 +119,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
+                    <div class="btn-holder-top"><button>Learn More</button></div>
                 </div>
                 <div class="container-bot">
                     <figure class="img-holder">
@@ -129,7 +131,7 @@
                         <h2>We Are Business Consulting & Credit Repair Experts</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem vitae, in sunt accusantium eaque aliquid est hic illo.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quos placeat tempore possimus est amet!</p>
-                        <div class="btn-holder">
+                        <div class="btn-holder-bot">
                             <button id="btn-left">Learn More</button>
                             <button id="btn-right"><i class="fa-solid fa-play"></i><span>Intro Video</span></button>
                         </div>
@@ -224,7 +226,6 @@
                         </div>
                         <div class="img-holder">
                             <img src="images/womendesk.svg" alt="">
-                            <div class="bg-colour"></div>
                         </div>
                     </div>
 
@@ -264,6 +265,7 @@
                     <div class="btn-holder"><button>All Recent Projects</button></div>
                 </div>
             </div>
+            <div class="bg-colour"></div>
         </section>
 
         <section class="section-five">
@@ -277,28 +279,28 @@
                     <div class="wrapper-top">
                         <ul>
                             <li>
-                                <div>
+                                <div class="wrapper-item-top">
                                     <img src="images/kristine-palmer.svg" alt="">
                                     <h3>Kristine Palmer</h3>
                                     <p>Chef Operation Officer</p>
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="wrapper-item-top">
                                     <img src="images/mark-aubri.svg" alt="">
                                     <h3>Mark Aubri</h3>
                                     <p>Senior Consultant</p>
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="wrapper-item-top">
                                     <img src="images/kimberly-hansen.svg" alt="">
                                     <h3>Kimberly Hansen</h3>
                                     <p>Senior Consultant</p>
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="wrapper-item-top">
                                     <img src="images/justin-willoman.svg" alt="">
                                     <h3>Justin Willoman</h3>
                                     <p>Senior Tech Consultant</p>
@@ -314,7 +316,7 @@
                         <h2>What Our Client Says</h2>
                     </div>
                     <div class="wrapper-bot">
-                        <div class="wrapper-item">
+                        <div class="wrapper-item-bot">
                             <div class="wrapper-item-text">
                                 <img src="images/Star.svg" alt="">
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
@@ -329,7 +331,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="wrapper-item">
+                        <div class="wrapper-item-bot">
                             <div class="wrapper-item-text">
                                 <img src="images/Star.svg" alt="">
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
@@ -344,7 +346,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="wrapper-item">
+                        <div class="wrapper-item-bot">
                             <div class="wrapper-item-text">
                                 <img src="images/Star.svg" alt="">
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
@@ -375,21 +377,21 @@
                 <div class="wrapper">
                     <div class="wrapper-item">
                         <img src="images/sect-six-item-one.svg" alt="">
-                        <div class="item-box">25 Mar</div>
+                        <div class="item-box"><b>25</b><p>Mar</p></div>
                         <span><p>Business</p></span>
                         <h3>How To Use Digitalization In The Classroom</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                     </div>
                     <div class="wrapper-item">
                         <img src="images/sect-six-item-two.svg" alt="">
-                        <div class="item-box">17 Mar</div>
+                        <div class="item-box"><b>17</b><p>Mar</p></div>
                         <span><p>Business</p></span>
                         <h3>How To Implement Chat GPT In Your Projects</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                     </div>
                     <div class="wrapper-item">
                         <img src="images/sect-six-item-three.svg" alt="">
-                        <div class="item-box">13 Mar</div>
+                        <div class="item-box"><b>13</b><p>Mar</p></div>
                         <span><p>Business</p></span>
                         <h3>The Guide To Support Modern CSS Design</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
@@ -401,18 +403,25 @@
 
         <section class="section-seven">
             <div class="container">
-                <div class="wrapper">
-                    <div><h2>Get News Updates By Signup</h2></div>
-                    <div><input type="text" placeholder="username@domain.com"><button>Subscribe</button></div>
-                </div>
+                <form action="/submit" method="POST">
+                    <h2>Get News Updates By Signup</h2>
+                    <ul>
+                        <li>
+                            <input type="email" id="email" name="email" placeholder="username@domain.com" required>
+                        </li>
+                        <li>
+                            <input type="submit" id="button" value="Subscribe">
+                        </li>
+                    </ul>
+                </form>
             </div>
             <div class="bg-line"><img src="images/background-wavy-lines.svg" alt=""></div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="content-container">
+        <div class="container-fluid">
+            <div class="container content-container">
                 <div class="img-holder">
                     <img src="images/Logotype-footer.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
@@ -447,7 +456,8 @@
                         <li><a href="#"> Youtube Playlist</a></li>
                     </ul>
                 </div>
-            </div>  
+            </div>
+            <div class= "bg-line"><img src="images/background-lines-white-right.svg" alt=""></div> 
         </div>
         <div class="container-fluid top-border">
             <div class="container bottom-wrapper">
@@ -462,7 +472,6 @@
                 </div>
             </div>
         </div>
-        <div class="bg-line"><img src="images/background-lines-white-right.svg" alt=""></div>
     </footer>
     
 </body>
