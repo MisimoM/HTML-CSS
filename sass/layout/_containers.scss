@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as var;
+
+section {
+    padding-top: var.$pad-90px;
+    padding-bottom: var.$pad-90px;
+}
+
+@media screen and (max-width: 36em) {
+
+    section {
+        padding-top: var.$pad-mob;
+        padding-bottom: var.$pad-mob;
+    }
+}
+
+
+

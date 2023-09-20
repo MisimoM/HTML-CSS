@@ -1,0 +1,117 @@
+@use "../abstracts/variables" as var;
+
+header {
+
+    background-color: var.$clr-primary-200;
+
+    .menu-bar-container {
+        margin-left: 3rem;
+        width: 100%;
+        color: var.$clr-secondary-300;
+    
+        ul {
+            display: flex;
+            font-family: var.$ff-inter;
+        }
+    }
+
+    .menu-bar-top {
+        display: flex;
+        justify-content: space-between;
+        font-size: .93rem;
+        padding: 0.3rem;
+        border-bottom: 1px solid var.$clr-secondary-100;
+        
+        ul {
+            align-items: center;
+            gap: 1rem;
+            font-weight: var.$fw-light;
+        }
+    
+        ul #phone, #email {
+            border-right: 1px solid var.$clr-secondary-100;
+            padding-right: 2rem;
+        }
+    
+        i {
+            padding-right: .3rem;
+            color: var.$clr-secondary-200;
+        }
+    }
+    
+    .social-media-header {
+        font-size: 1.1rem;
+    
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem
+        }
+    
+        a {
+            color: var.$clr-secondary-300;
+        }
+    }
+    
+    .menu-bar-bot {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    
+        ul {
+            align-items: end;
+            font-weight: var.$fw-medium;
+            font-size: 1rem;
+            gap: 2.5rem;
+            padding-bottom: 0.4rem;
+        }
+    
+        a:active {
+            text-decoration: underline;
+        }
+    
+        .button-yellow {
+            align-self: end;
+            width: 5rem;
+        } 
+    } 
+
+    @media screen and (max-width: 36em) {
+    
+        .menu-bar-container {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 36.063em) {
+        .menu-holder {
+            display: none;
+        }
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-holder {
+        
+        padding-right: 1rem;
+    
+        button {
+            background-color: var.$clr-primary-200;
+    
+            i {
+                font-size: 1.563rem;
+            }
+    
+            &:hover {
+    
+                i {
+                    font-size: calc(1.563rem + 20%);
+                }
+            }
+        }
+    }
+    
+}

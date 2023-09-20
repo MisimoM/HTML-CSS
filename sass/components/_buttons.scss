@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as var;
+
+button {
+    font-family: var.$ff-inter;
+    font-weight: var.$fw-semibold;
+    font-size: var.$fs-16px;
+    color: var.$clr-secondary-300;
+    border-radius: var.$fs-20px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.button-yellow {
+    @extend button;
+    background-color: var.$clr-yellow;
+}
+
+.button-black {
+    @extend button;
+    background-color: var.$clr-secondary-300;
+    color: var.$clr-primary-100;
+}
+
+.button-transparent {
+    @extend button;
+    border: 1px solid var.$clr-secondary-300;
+
+}

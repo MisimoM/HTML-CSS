@@ -1,47 +1,58 @@
 @use "../abstracts/variables" as var;
 
-@media screen and (max-width: 36em) {
-    h1 {
-
-    }
-
-    h2{
-
-    }
-
-    h3 {
-
-    }
-
-    p {
-
-    }   
+h1 {
+    font-family: var.$ff-DMsans;
+    font-weight: var.$fw-bold;
+    font-size: var.$fs-96px;
+    color: var.$clr-secondary-300;
 }
 
-@media screen and (min-width: 36.063em) {
-    
+h2 {
+    color: var.$clr-secondary-300;
+    font-family: var.$ff-DMsans;
+    font-weight: var.$fw-bold;
+    font-size: var.$fs-45px;
+}
+
+h3 {
+    font-family: var.$ff-DMsans;
+    font-weight: var.$fw-bold;
+    font-size: var.$fs-22px;
+    color: var.$clr-secondary-300;
+}
+
+p {
+    font-family: var.$ff-inter;
+    font-weight: var.$fw-regular;
+    font-size: var.$fs-16px;
+    color: var.$clr-secondary-200;
+}
+
+.orange {
+    font-family: var.$ff-inter;
+    font-weight: var.$fw-medium;
+    font-size: var.$fs-18px;
+    color: var.$clr-orange;
+}
+
+
+@media screen and (max-width: 36em) {
+
     h1 {
-        font-family: var.$ff-DMsans;
-        font-weight: var.$fw-bold;
-        font-size: var.$fs-96px;
-        color: var.$clr-secondary-300;
+        font-size: var.$fs-mob-h1;
     }
 
     h2 {
-        color: var.$clr-secondary-300;
-        font-family: var.$ff-DMsans;
-        font-weight: var.$fw-bold;
-        font-size: var.$fs-45px;
+        font-size: var.$fs-mob-h2;
     }
 
     h3 {
-        font-family: var.$ff-DMsans;
-        font-weight: var.$fw-bold;
-        font-size: var.$fs-22px;
-        color: var.$clr-secondary-300;
+        font-size: var.$fs-mob-h3;
     }
 
     p {
-        
-    }  
+        font-size: var.$fs-mob-p;
+    }
+
 }
+

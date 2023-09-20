@@ -8,18 +8,27 @@ $clr-secondary-300: #191919; //100%
 
 $clr-yellow: #F9D783; // Yellow
 $clr-orange: #F94D1C; // Orange
+$clr-blue: #0E1021; // Blue
 
 // Fonts
 $ff-inter: Inter;
 $ff-DMsans: DM Sans;
 
 // Font Size
+// Desktop
 $fs-16px: 1rem;
 $fs-18px: 1.125rem;
 $fs-20px: 1.25rem;
 $fs-22px: 1.375rem;
 $fs-45px: 2.813rem;
 $fs-96px: 6rem;
+
+//Mobile
+$fs-mob-h1: 3rem;
+$fs-mob-h2: 2rem;
+$fs-mob-h3: 1rem;
+$fs-mob-p: 0.8rem;
+
 
 // Font weights
 $fw-light: 300;
@@ -29,8 +38,19 @@ $fw-semibold: 600;
 $fw-bold: 700;
 
 // Margin & Padding
+// Desktop
 $mar-90px: 5.625rem;
 $mar-120px: 7.5rem;
 
 $pad-90px: 5.625rem;
 $pad-120px: 7.5rem;
+
+//Mobile
+$pad-mob: 2rem;     
+$mar-mob: 2rem;
+
+//Media Queries
+//Desktop
+$ss-desk: 36.063em;
+//Mobile
+$ss-mob: 36em;

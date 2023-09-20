@@ -60,50 +60,6 @@
 }
 
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-header, .section-one, .section-three {
-    background-color: $clr-primary-200;
-}
-
-// Mobile Version
-
-//Header start
-.menu-bar-container {
-    display: none;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-holder {
-
-    padding-right: 1rem;
-
-    button {
-        border: none;
-        background-color: $clr-primary-200;
-
-        i {
-            font-size: 1.563rem;
-        }
-
-        &:hover {
-
-            i {
-                font-size: calc(1.563rem + 20%);
-            }
-        }
-    }
-}
-
-
 
 .section-one {
     padding-top: 3rem;
@@ -185,7 +141,6 @@ header, .section-one, .section-three {
         padding-bottom: 3rem;
         
         h2 {
-            font-size: 2rem;
             padding-top: 0.5rem;
         }
 
