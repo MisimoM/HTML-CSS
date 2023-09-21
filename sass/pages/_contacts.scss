@@ -41,12 +41,17 @@
     .wrapper-contact {
         display: flex;
         gap: 3rem;
-        justify-content: center;
+
+        @media screen and (min-width: var.$ss-desk) {
+            justify-content: space-between;
+        }
 
         @media screen and (max-width: var.$ss-mob) {
             gap: 1rem;
             flex-wrap: wrap;
             padding-bottom: 2rem;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -54,17 +59,24 @@
         display: flex;
         gap: 1rem;
         border: 1px solid var.$clr-secondary-200;
-        padding: 2rem;
 
         i {
             font-size: var.$fs-22px;
+        }
+
+        @media screen and (min-width: var.$ss-desk) {
+            width: 100%;
+            justify-content: center;
+            padding: 2rem;
         }
 
         @media screen and (max-width: var.$ss-mob) {
             border-radius: 5px;
             flex-direction: column;
             text-align: center;
-            gap: 1rem;
+            padding: 1rem;
+            white-space: nowrap;
+            flex: 1;
         }
     }
 

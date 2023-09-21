@@ -156,7 +156,7 @@ header .social-media-header ul {
   align-items: center;
   gap: 0.7rem;
 }
-header .social-media-header a {
+header .social-media-header i {
   color: #191919;
 }
 header .menu-bar-bot {
@@ -487,7 +487,7 @@ footer .bottom-wrapper ul a {
 }
 @media screen and (max-width: 36em) {
   .section-two .grid {
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     gap: 0.3rem;
     margin-bottom: 2rem;
   }
@@ -532,8 +532,6 @@ footer .bottom-wrapper ul a {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 }
 .section-two .img-text {
@@ -563,17 +561,22 @@ footer .bottom-wrapper ul a {
 @media screen and (max-width: 36em) {
   .section-two .img-text {
     width: 110%;
-    height: 7rem;
-    bottom: 1rem;
+    height: 30%;
+    bottom: 2rem;
     left: -1rem;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .section-two .img-text span {
     font-size: 1rem;
   }
   .section-two .img-text p {
     margin-top: 0.3rem;
+  }
+}
+@media screen and (max-width: 36em) and (max-width: 24em) {
+  .section-two .img-text p {
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 36.063em) {
@@ -596,8 +599,6 @@ footer .bottom-wrapper ul a {
 }
 .section-two .btn-holder-bot {
   display: flex;
-  padding-top: 5rem;
-  gap: 3rem;
   align-items: center;
 }
 .section-two .btn-holder-bot button {
@@ -616,14 +617,22 @@ footer .bottom-wrapper ul a {
 .section-two .btn-holder-bot #btn-right span {
   margin-left: 0.5rem;
 }
+@media screen and (min-width: 36.063em) {
+  .section-two .btn-holder-bot {
+    padding-top: 5rem;
+    gap: 3rem;
+  }
+}
 @media screen and (max-width: 36em) {
   .section-two .btn-holder-bot {
     justify-content: space-evenly;
     padding-top: 2rem;
-    gap: 0.5rem;
   }
   .section-two .btn-holder-bot span {
     font-size: 0.8rem;
+  }
+  .section-two .btn-holder-bot button {
+    width: 9rem;
   }
 }
 
@@ -756,7 +765,6 @@ footer .bottom-wrapper ul a {
 .section-four .text-holder ul {
   padding-top: 2rem;
   display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 @media screen and (min-width: 36.063em) {
@@ -766,10 +774,15 @@ footer .bottom-wrapper ul a {
   .section-four .text-holder h2 {
     padding-right: 2rem;
   }
+  .section-four .text-holder ul {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 36em) {
   .section-four .text-holder ul {
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .section-four .wrapper {
@@ -1246,30 +1259,44 @@ footer .bottom-wrapper ul a {
 .section-forms .wrapper-contact {
   display: flex;
   gap: 3rem;
-  justify-content: center;
+}
+@media screen and (min-width: 36.063em) {
+  .section-forms .wrapper-contact {
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 36em) {
   .section-forms .wrapper-contact {
     gap: 1rem;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 .section-forms .item-wrapper {
   display: flex;
   gap: 1rem;
   border: 1px solid #5A5957;
-  padding: 2rem;
 }
 .section-forms .item-wrapper i {
   font-size: 1.375rem;
+}
+@media screen and (min-width: 36.063em) {
+  .section-forms .item-wrapper {
+    width: 100%;
+    justify-content: center;
+    padding: 2rem;
+  }
 }
 @media screen and (max-width: 36em) {
   .section-forms .item-wrapper {
     border-radius: 5px;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
+    padding: 1rem;
+    white-space: nowrap;
+    flex: 1;
   }
 }
 @media screen and (min-width: 36.063em) {
