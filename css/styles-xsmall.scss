@@ -240,19 +240,10 @@
     }
 
     .btn-holder-bot {
-        display: flex;
         justify-content: space-around;
         gap: 0.5rem;
-        align-items: center;
 
-        #btn-left {
-            background-color: $clr-secondary-300;
-            color: $clr-primary-100;
-            border: none;
-            width: 10rem;
-            height: 100%;
-    
-        }
+
     
         #btn-right {
             background-color: $clr-primary-100;
@@ -416,7 +407,6 @@
         h2 {
             text-align: center;
             margin-top: 1rem;
-            font-size: 2rem;
         }
 
         h4 {
@@ -442,11 +432,7 @@
         }
 
         button {
-            border: none;
-            padding: 0;
             margin-bottom: 1rem;
-            font-size: 1rem;
-            background-color: $clr-primary-100;
 
         }
     }
@@ -457,9 +443,6 @@
 
         button {
             width: 15rem;
-            border: none;
-            background-color: $clr-secondary-300;
-            color: $clr-primary-100;
 
         }
     }

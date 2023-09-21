@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 body, h1, h2, h3, p, ul, li, figure {
     margin: 0;
     padding: 0;
@@ -18,8 +22,13 @@ a {
     color: inherit;
 }
 
-button, input {
+button {
     background: none;
+    border: none;
+    outline: none;
+}
+
+input {
     border: none;
     outline: none;
 }

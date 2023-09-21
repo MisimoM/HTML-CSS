@@ -24,5 +24,4 @@ button {
 .button-transparent {
     @extend button;
     border: 1px solid var.$clr-secondary-300;
-
 }
