@@ -10,6 +10,14 @@ button {
     padding-bottom: 0.5rem;
 }
 
+.fa-arrow-up {
+    transform: rotate(45deg);
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        vertical-align: top;
+        margin-top: 0.2rem;
+}
+
 .button-yellow {
     @extend button;
     background-color: var.$clr-yellow;

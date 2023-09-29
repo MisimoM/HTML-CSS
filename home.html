@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- CSS file for screens with a maximum width of 574px -->
+
     <link rel="stylesheet" type="text/css" href="sass/main.css">
     
     <title>Home</title>
@@ -55,7 +55,7 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
-                    <button class="button-yellow">Login</button>
+                    <button class="button-yellow">Login<i class="fa-solid fa-arrow-up"></i></button>
                 </div>
             </div>
         </div>
@@ -69,7 +69,10 @@
                         <h1>We Provide The Best Business Solutions</h1>
                         <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
                     </div>
-                    <div class="btn-holder"><button class="button-yellow">Get consulting</button><button class="button-transparent">Learn more</button></div>
+                    <div class="btn-holder">
+                        <button class="button-yellow">Get consulting<i class="fa-solid fa-arrow-up"></i></button>
+                        <button class="button-transparent">Learn more<i class="fa-solid fa-arrow-up"></i></button>
+                    </div>
                 </div>
                 <figure class="img-holder">
                     <img src="images/thinkingman.svg" alt="Man in a suit">
@@ -93,7 +96,7 @@
                     <div class="text-holder-top">
                         <p class="orange">Features</p>
                         <h2>Our Accounting is trusted by thousand of companies</h2>
-                        <button class="button-yellow">Learn More</button>
+                        <button class="button-yellow">Learn More<i class="fa-solid fa-arrow-up"></i></button>
                     </div>
                     <div class="grid">
                         <div class="grid-item">
@@ -117,12 +120,15 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
-                    <div class="btn-holder-top"><button class="button-yellow">Learn More</button></div>
+                    <div class="btn-holder-top"><button class="button-yellow">Learn More<i class="fa-solid fa-arrow-up"></i></button></div>
                 </div>
                 <div class="container-bot">
                     <figure class="img-holder">
                         <img src="images/samantha-brown.svg" alt="">
-                        <div class="img-text"><h3>Samantha Brown, <span class="orange">Founder</span></h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugit.</p></div>
+                        <div class="img-text">
+                            <h3>Samantha Brown, <span class="orange">Founder</span></h3>
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        </div>
                     </figure>
                     <div class="text-holder-bot">
                         <p class="orange">About Company</p>
@@ -130,7 +136,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem vitae, in sunt accusantium eaque aliquid est hic illo.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quos placeat tempore possimus est amet!</p>
                         <div class="btn-holder-bot">
-                            <button class="button-black">Learn More</button>
+                            <button class="button-black">Learn More<i class="fa-solid fa-arrow-up"></i></button>
                             <button id="btn-right"><i class="fa-solid fa-play"></i><span>Intro Video</span></button>
                         </div>
                     </div>
@@ -168,7 +174,7 @@
                         <button class="button-black"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
-                <div class="btn-holder"><button class="button-transparent">Browse Services</button></div>
+                <div class="btn-holder"><button class="button-transparent">Browse Services<i class="fa-solid fa-arrow-up"></i></button></div>
             </div>
             <div class="bg-line"><img src="images/background-lines-right.svg" alt=""></div>
         </section>
@@ -231,36 +237,52 @@
                     <p class="orange">Project & Case Studies</p>
                     <h2>Let's Look Our Global Projects</h2>
                     <div class="grid">
-                        <div>
-                            <div>
-                                <img src="images/grid-img-one.svg" alt="">
-                                <h3>Grow your business</h3>
+                        <a href="#">
+                            <div class="grid-item">
+                                <div>
+                                    <div class="grid-img-holder">
+                                        <img src="images/grid-img-one.svg" alt="">
+                                    </div>
+                                    <h3>Grow your business</h3>
+                                </div>
+                                <button>Read More<i class="fa-solid fa-arrow-up"></i></button>
                             </div>
-                            <button>Read More</button>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="images/grid-img-two.svg" alt="">
-                                <h3>Why your client needs a responsive website</h3>
+                        </a>
+                        <a href="#">
+                            <div class="grid-item">
+                                <div>
+                                    <div class="grid-img-holder">
+                                        <img src="images/grid-img-two.svg" alt="">
+                                    </div>
+                                    <h3>Why your client needs a responsive website</h3>
+                                </div>
+                                <button>Read More<i class="fa-solid fa-arrow-up"></i></button>
                             </div>
-                            <button>Read More</button>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="images/grid-img-three.svg" alt="">
-                                <h3>Educate your employees to get better results</h3>
+                        </a>
+                        <a href="#">
+                            <div class="grid-item">
+                                <div>
+                                    <div class="grid-img-holder">
+                                        <img src="images/grid-img-three.svg" alt="">
+                                    </div>
+                                    <h3>Educate your employees to get better results</h3>
+                                </div>
+                                <button>Read More<i class="fa-solid fa-arrow-up"></i></button>
                             </div>
-                            <button>Read More</button>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="images/grid-img-four.svg" alt="">
-                                <h3>Business Insights is a important piece of your business</h3>
+                        </a>
+                        <a href="#">
+                            <div class="grid-item">
+                                <div>
+                                    <div class="grid-img-holder">
+                                        <img src="images/grid-img-four.svg" alt="">
+                                    </div>
+                                    <h3>Business Insights is a important piece of your business</h3>
+                                </div>
+                                <button>Read More<i class="fa-solid fa-arrow-up"></i></button>
                             </div>
-                            <button>Read More</button>
-                        </div>
+                        </a>
                     </div>
-                    <div class="btn-holder"><button class="button-black">All Recent Projects</button></div>
+                    <div class="btn-holder"><button class="button-black">All Recent Projects<i class="fa-solid fa-arrow-up"></i></button></div>
                 </div>
             </div>
             <div class="bg-colour"></div>
@@ -272,7 +294,7 @@
                     <p class="orange">Meet Our Team</p>
                     <div class="heading-wrap">
                         <h2>Experience Team Members</h2>
-                        <button class="button-transparent">Browse Team</button>
+                        <button class="button-transparent">Browse Team<i class="fa-solid fa-arrow-up"></i></button>
                     </div>
                     <div class="wrapper-top">
                         <ul>
@@ -306,6 +328,7 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="btn-holder-top"><button class="button-transparent">Browse Team<i class="fa-solid fa-arrow-up"></i></button></div>
                 </div>
                 <div class="dot-holder"><img src="images/dot.svg" alt=""></div>
                 <div class="container-bot">
@@ -320,9 +343,7 @@
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                             </div>
                             <div class="wrapper-item-img">
-                                <div class="divider">
-                                    <img src="images/cassandra-warren.svg" alt="">
-                                </div>
+                                <img src="images/cassandra-warren.svg" alt="">
                                 <div>
                                     <h3>Cassandra Warren</h3>
                                     <p class="orange">Business Manager, Dorfus</p>
@@ -335,24 +356,20 @@
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                             </div>
                             <div class="wrapper-item-img">
-                                <div class="divider">
-                                    <img src="images/amanda-tulling.svg" alt="">
-                                </div>
+                                <img src="images/amanda-tulling.svg" alt="">
                                 <div>
                                     <h3>Amanda Tulling</h3>
                                     <p class="orange">Senior Developer, Square</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="wrapper-item-bot">
+                        <div class="wrapper-item-bot" id="item-three">
                             <div class="wrapper-item-text">
                                 <img src="images/Star.svg" alt="">
                                 <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                             </div>
                             <div class="wrapper-item-img">
-                                <div class="divider">
-                                    <img src="images/jack-mcdogglas.svg" alt="">
-                                </div>
+                                <img src="images/jack-mcdogglas.svg" alt="">
                                 <div>
                                     <h3>Jack McDogglas</h3>
                                     <p class="orange">Key Account Manager, Gobona</p>
@@ -360,7 +377,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="btn-holder"><button class="button-black">All Reviews</button></div>
+                    <div class="btn-holder-bot"><button class="button-black">All Reviews<i class="fa-solid fa-arrow-up"></i></button></div>
                 </div>
             </div>
         </section>
@@ -370,30 +387,51 @@
                 <p class="orange">Article & News</p>
                 <div class="heading-wrap">
                     <h2>Get Every Single Articles & News</h2>
-                    <button class="button-transparent">Browse Articles</button>
+                    <button class="button-transparent">Browse Articles<i class="fa-solid fa-arrow-up"></i></button>
                 </div>
                 <div class="wrapper">
-                    <div class="wrapper-item">
-                        <img src="images/sect-six-item-one.svg" alt="">
-                        <div class="item-box"><b>25</b><p>Mar</p></div>
-                        <span><p>Business</p></span>
-                        <h3>How To Use Digitalization In The Classroom</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                    </div>
-                    <div class="wrapper-item">
-                        <img src="images/sect-six-item-two.svg" alt="">
-                        <div class="item-box"><b>17</b><p>Mar</p></div>
-                        <span><p>Business</p></span>
-                        <h3>How To Implement Chat GPT In Your Projects</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                    </div>
-                    <div class="wrapper-item">
-                        <img src="images/sect-six-item-three.svg" alt="">
-                        <div class="item-box"><b>13</b><p>Mar</p></div>
-                        <span><p>Business</p></span>
-                        <h3>The Guide To Support Modern CSS Design</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                    </div>
+                    <a href="#">
+                        <div class="wrapper-item">
+                            <div class="wrapper-img">
+                                <img src="images/sect-six-item-one.svg" alt="">
+                            </div>
+                            <div class="item-box">
+                                <b>25</b>
+                                <p>Mar</p>
+                            </div>
+                            <span><p>Business</p></span>
+                            <h3>How To Use Digitalization In The Classroom</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="wrapper-item">
+                            <div class="wrapper-img">
+                                <img src="images/sect-six-item-two.svg" alt="">
+                            </div>
+                            <div class="item-box">
+                                <b>17</b>
+                                <p>Mar</p>
+                            </div>
+                            <span><p>Business</p></span>
+                            <h3>How To Implement Chat GPT In Your Projects</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="wrapper-item">
+                            <div class="wrapper-img">
+                                <img src="images/sect-six-item-three.svg" alt="">
+                            </div>
+                            <div class="item-box">
+                                <b>13</b>
+                                <p>Mar</p>
+                            </div>
+                            <span><p>Business</p></span>
+                            <h3>The Guide To Support Modern CSS Design</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="dot-holder"><img src="images/dot.svg" alt=""></div>
             </div>
@@ -408,7 +446,7 @@
                             <input type="email" id="email" name="email" placeholder="username@domain.com" required>
                         </li>
                         <li>
-                            <input type="submit" class="button-yellow" value="Subscribe">
+                            <button type="submit" class="button-yellow" value="Subscribe">Subscribe<i class="fa-solid fa-arrow-up"></i></button>
                         </li>
                     </ul>
                 </form>
@@ -426,28 +464,28 @@
                 </div>
                 <div class="wrapper">
                     <ul>
-                        <li><a href="#"><h3>Company</h3></a></li>
+                        <li><h3>Company</h3></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Works</a></li>
                         <li><a href="#">Career</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#"><h3>Help</h3></a></li>
+                        <li><h3>Help</h3></li>
                         <li><a href="#">Customer Support</a></li>
                         <li><a href="#">Delivery Details</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#"><h3>Resources</h3></a></li>
+                        <li><h3>Resources</h3></li>
                         <li><a href="#">Free eBooks</a></li>
                         <li><a href="#">Development tutorial</a></li>
                         <li><a href="#">How to - Blog</a></li>
                         <li><a href="#"> Youtube Playlist</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#"><h3>Link</h3></a></li>
+                        <li><h3>Link</h3></li>
                         <li><a href="#">Free eBooks</a></li>
                         <li><a href="#">Development tutorial</a></li>
                         <li><a href="#">How to - Blog</a></li>

@@ -19,6 +19,7 @@ h3 {
     font-weight: var.$fw-bold;
     font-size: var.$fs-22px;
     color: var.$clr-secondary-300;
+    line-height: 1.8rem;
 }
 
 p {
@@ -26,6 +27,7 @@ p {
     font-weight: var.$fw-regular;
     font-size: var.$fs-16px;
     color: var.$clr-secondary-200;
+    line-height: 1.8rem;
 }
 
 .orange {
@@ -35,8 +37,24 @@ p {
     color: var.$clr-orange;
 }
 
+header {
 
-@media screen and (max-width: 36em) {
+    a {
+        @extend p;
+        color: var.$clr-secondary-300;
+    }
+}
+
+footer {
+
+    a, p {
+        @extend p;
+        color: var.$clr-secondary-100;
+    }
+}
+
+
+@media screen and (max-width: var.$ss-mob) {
 
     h1 {
         font-size: var.$fs-mob-h1;
