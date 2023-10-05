@@ -362,6 +362,18 @@
             span {
                 margin-left: 0.5rem;
             }
+
+            &:hover {
+                color: var.$clr-orange;
+                transition: color 250ms;
+
+                i {
+                    background-color: var.$clr-secondary-300;
+                    color: var.$clr-primary-100;
+                    transition: background-color 250ms, color 750ms;
+                }
+
+            }
         }
 
         @media screen and (min-width: var.$ss-desk) {
@@ -430,11 +442,19 @@
 
         button {
             float: right;
-            font-size: 1.3rem;
-            padding-right: 0.8rem;
-            padding-left: 0.8rem;
+            font-size: 1.5rem;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
             border-radius: 25px;
-            display: block;
+            width: 3rem;
+
+            p {
+                color: var.$clr-secondary-300;
+                font-weight: var.$fw-bold;
+                height: 0;
+                overflow: hidden;
+                padding: 0;
+            }
         }
 
         @media screen and (min-width: var.$ss-desk) {
@@ -468,14 +488,56 @@
         padding: 0;
     }
 
+    @keyframes text-reveal {
+        0% {
+            height: 0;
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            height: auto;
+            opacity: 1;
+        }
+    }
+
     .wrapper-item:hover {
         background-color: var.$clr-yellow;
 
         button {
             background-color: var.$clr-primary-100;
-            color: var.$clr-secondary-300;
+            width: 9rem;
+            transition: width 500ms;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+
+            i {
+                float: left;
+                padding-top: 0.3rem;
+                padding-left: 0.5rem;
+                color: var.$clr-secondary-300;
+            }
+
+            p {
+                animation-name: text-reveal;
+                animation-duration: 500ms;
+                animation-delay: 250ms;
+                animation-fill-mode: forwards;
+            }
         }
     }
+
 
     .btn-holder {
         text-align: center;
@@ -1005,9 +1067,11 @@
         .item-box {
             background-color: black;
             color: white;
+            transition: background-color 250ms, color 750ms;
 
             p {
                 color: white;
+                transition: color 750ms;
             }
         }
 

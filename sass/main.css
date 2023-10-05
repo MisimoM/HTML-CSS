@@ -113,14 +113,30 @@ button, .button-transparent, .button-black, .button-yellow {
 .button-yellow {
   background-color: #F9D783;
 }
+.button-yellow:hover {
+  background-color: #191919;
+  color: #FFFFFF;
+  transition: background-color 250ms, color 750ms;
+}
 
 .button-black {
   background-color: #191919;
   color: #FFFFFF;
 }
+.button-black:hover {
+  background-color: #F9D783;
+  color: #191919;
+  transition: background-color 250ms, color 750ms;
+}
 
 .button-transparent {
   border: 1px solid #191919;
+}
+.button-transparent:hover {
+  background-color: #F94D1C;
+  border: 1px solid #F94D1C;
+  color: #FFFFFF;
+  transition: background-color 250ms, border 250ms, color 750ms;
 }
 
 @media screen and (max-width: 36em) {
@@ -213,7 +229,7 @@ header .social-media-header i {
   padding-right: 0;
 }
 header .social-media-header i:hover {
-  color: #5A5957;
+  color: #F9D783;
 }
 header .menu-bar-bot {
   display: flex;
@@ -242,7 +258,7 @@ header .menu-bar-bot a::before {
 }
 header .menu-bar-bot a:hover::before {
   border-bottom: 2px solid #191919;
-  bottom: -6px;
+  bottom: -4px;
 }
 header .menu-bar-bot .button-yellow {
   align-self: end;
@@ -680,6 +696,15 @@ footer .wrapper-item-link i:hover {
 .section-two .btn-holder-bot #btn-right span {
   margin-left: 0.5rem;
 }
+.section-two .btn-holder-bot #btn-right:hover {
+  color: #F94D1C;
+  transition: color 250ms;
+}
+.section-two .btn-holder-bot #btn-right:hover i {
+  background-color: #191919;
+  color: #FFFFFF;
+  transition: background-color 250ms, color 750ms;
+}
 @media screen and (min-width: 36.063em) {
   .section-two .btn-holder-bot {
     padding-top: 5rem;
@@ -741,11 +766,18 @@ footer .wrapper-item-link i:hover {
 }
 .section-three .wrapper-item button {
   float: right;
-  font-size: 1.3rem;
-  padding-right: 0.8rem;
-  padding-left: 0.8rem;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   border-radius: 25px;
-  display: block;
+  width: 3rem;
+}
+.section-three .wrapper-item button p {
+  color: #191919;
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
 }
 @media screen and (min-width: 36.063em) {
   .section-three .wrapper-item p {
@@ -775,12 +807,46 @@ footer .wrapper-item-link i:hover {
   width: 2rem;
   padding: 0;
 }
+@keyframes text-reveal {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    height: auto;
+    opacity: 1;
+  }
+}
 .section-three .wrapper-item:hover {
   background-color: #F9D783;
 }
 .section-three .wrapper-item:hover button {
   background-color: #FFFFFF;
+  width: 9rem;
+  transition: width 500ms;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.section-three .wrapper-item:hover button i {
+  float: left;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
   color: #191919;
+}
+.section-three .wrapper-item:hover button p {
+  animation-name: text-reveal;
+  animation-duration: 500ms;
+  animation-delay: 250ms;
+  animation-fill-mode: forwards;
 }
 .section-three .btn-holder {
   text-align: center;
@@ -1249,9 +1315,11 @@ footer .wrapper-item-link i:hover {
 .section-six .wrapper-item:hover .item-box {
   background-color: black;
   color: white;
+  transition: background-color 250ms, color 750ms;
 }
 .section-six .wrapper-item:hover .item-box p {
   color: white;
+  transition: color 750ms;
 }
 .section-six .item-box {
   position: absolute;

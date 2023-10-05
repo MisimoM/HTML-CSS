@@ -81,7 +81,7 @@ header {
         }
 
         i:hover {
-            color: var.$clr-secondary-200;
+            color: var.$clr-yellow;
         }
     }
     
@@ -115,7 +115,7 @@ header {
 
         a:hover::before {
             border-bottom: 2px solid var.$clr-secondary-300;
-            bottom: calc(2px * -3);
+            bottom: calc(2px * -2);
         }
     
         .button-yellow {
