@@ -33,7 +33,7 @@ input, textarea {
   outline: none;
 }
 
-h1 {
+h1, h3, h2 {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 6rem;
@@ -41,17 +41,11 @@ h1 {
 }
 
 h2 {
-  color: #191919;
-  font-family: DM Sans;
-  font-weight: 700;
   font-size: 2.813rem;
 }
 
 h3 {
-  font-family: DM Sans;
-  font-weight: 700;
   font-size: 1.375rem;
-  color: #191919;
   line-height: 1.8rem;
 }
 
@@ -68,6 +62,7 @@ p, footer a, footer p, header a {
   font-weight: 500;
   font-size: 1.125rem;
   color: #F94D1C;
+  margin-bottom: 1rem;
 }
 
 header a {
@@ -79,7 +74,7 @@ footer a, footer p {
 }
 
 @media screen and (max-width: 36em) {
-  h1 {
+  h1, h2, h3 {
     font-size: 3rem;
   }
   h2 {
@@ -659,6 +654,9 @@ footer .wrapper-item-link i:hover {
   .section-two .text-holder-bot p {
     padding-top: 1.5rem;
   }
+  .section-two .text-holder-bot .orange {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 36em) {
   .section-two .text-holder-bot {
@@ -959,9 +957,6 @@ footer .wrapper-item-link i:hover {
     display: none;
   }
 }
-.section-four .container-bot h2 {
-  margin-top: 1rem;
-}
 @media screen and (min-width: 36.063em) {
   .section-four .container-bot {
     padding-top: 7.5rem;
@@ -1169,9 +1164,6 @@ footer .wrapper-item-link i:hover {
   .section-five .text-holder {
     text-align: center;
   }
-  .section-five .text-holder h2 {
-    margin-top: 1rem;
-  }
 }
 @media screen and (min-width: 36.063em) {
   .section-five .wrapper-bot {
@@ -1195,6 +1187,9 @@ footer .wrapper-item-link i:hover {
   .section-five .wrapper-bot p {
     margin-top: 0.5rem;
   }
+}
+.section-five .wrapper-item-img .orange {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 36.063em) {
   .section-five .wrapper-item-img {
